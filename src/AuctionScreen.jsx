@@ -38,7 +38,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
   if (!player) return null;
 
   return (
-    <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden', color: 'white' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative', color: 'white' }}>
       <div className="stadium-bg" />
 
       {/* ── TOP NAV ── */}
@@ -106,7 +106,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
       </header>
 
       {/* ── MAIN LAYOUT ── */}
-      <div className="responsive-grid" style={{ flex: 1, display: 'grid', gridTemplateColumns: '340px 1fr 320px', gap: 0, overflowY: 'auto', overflowX: 'hidden', position: 'relative', zIndex: 10 }}>
+      <div className="auction-layout-grid" style={{ flex: 1, position: 'relative', zIndex: 10 }}>
         
         {/* ── LEFT: Player & My Squad ── */}
         <aside className="responsive-padding" style={{ borderRight: '1px solid rgba(255,255,255,0.06)', padding: 24, overflowY: 'visible', background: 'rgba(8,12,24,0.3)', display: 'flex', flexDirection: 'column', gap: 24 }}>

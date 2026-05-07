@@ -523,27 +523,44 @@ body {
 ::-webkit-scrollbar-thumb { background: var(--border-mid); border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--border-hi); }
 
+.auction-layout-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr 320px;
+  gap: 0;
+}
+
 /* ============================================
    RESPONSIVE
    ============================================ */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .mobile-hidden { display: none !important; }
   .mobile-full   { width: 100% !important; }
-  .bid-amount    { font-size: 52px; }
-  .player-avatar.large { width: 110px; height: 110px; font-size: 38px; }
+  .bid-amount    { font-size: 42px !important; }
+  .player-avatar.large { width: 90px !important; height: 90px !important; font-size: 32px !important; }
   
-  .responsive-grid {
+  .responsive-grid, .auction-layout-grid {
     grid-template-columns: 1fr !important;
-    gap: 16px !important;
+    gap: 24px !important;
+    overflow-y: auto !important;
+  }
+  
+  .responsive-grid aside, .responsive-grid main {
+    width: 100% !important;
+    border: none !important;
+    height: auto !important;
+    overflow: visible !important;
   }
   
   .responsive-padding {
-    padding: 16px !important;
+    padding: 20px !important;
   }
 
   .mobile-stack {
     flex-direction: column !important;
     align-items: stretch !important;
+    height: auto !important;
+    padding: 16px !important;
+    gap: 12px !important;
   }
 
   .mobile-center {
@@ -551,6 +568,7 @@ body {
     justify-content: center !important;
   }
   
-  h1 { font-size: 32px !important; }
-  .glass { padding: 16px !important; }
+  h1 { font-size: 28px !important; }
+  h2 { font-size: 24px !important; }
+  .glass { padding: 12px !important; }
 }
