@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap');
+
+/* ============================================
+   CSS VARIABLES & DESIGN TOKENS
+   ============================================ */
+:root {
+  --bg-deep:    #04060d;
+  --bg-dark:    #080c18;
+  --bg-card:    #0d1224;
+  --bg-elevated: #111829;
+  --bg-hover:   #161f33;
+
+  --primary:    #4f46e5;
+  --primary-light: #6366f1;
+  --primary-glow: rgba(79, 70, 229, 0.35);
+
+  --gold:       #f5a623;
+  --gold-light: #fbbf24;
+  --gold-glow:  rgba(245, 166, 35, 0.4);
+
+  --green:      #16c784;
+  --green-glow: rgba(22, 199, 132, 0.35);
+
+  --red:        #ef4444;
+  --red-glow:   rgba(239, 68, 68, 0.35);
+
+  --purple:     #7c3aed;
+  --cyan:       #06b6d4;
+
+  --text:       #f0f2f5;
+  --text-dim:   #8892a4;
+  --text-faint: #4a5568;
+
+  --border:     rgba(255, 255, 255, 0.06);
+  --border-mid: rgba(255, 255, 255, 0.1);
+  --border-hi:  rgba(255, 255, 255, 0.18);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg-deep);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================
+   STADIUM BACKGROUND
+   ============================================ */
+.stadium-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 10% 20%, rgba(79,70,229,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 90% 80%, rgba(124,58,237,0.10) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 50% 0%,  rgba(245,166,35,0.05) 0%, transparent 50%),
+    linear-gradient(180deg, #080c18 0%, #04060d 100%);
+  pointer-events: none;
+}
+
+/* Dot grid */
+.stadium-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+/* Sweeping light from top */
+.stadium-bg::after {
+  content: '';
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 60%;
+  background: radial-gradient(ellipse at center, rgba(79,70,229,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ============================================
+   GLASS CARDS
+   ============================================ */
+.glass {
+  background: rgba(13,18,36,0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.glass-elevated {
+  background: rgba(17,24,41,0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border-mid);
+  box-shadow: 0 16px 60px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.07);
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+.font-display { font-family: 'Rajdhani', sans-serif; }
+
+.text-gradient-white {
+  background: linear-gradient(135deg, #ffffff 0%, #b0b8cc 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-green {
+  background: linear-gradient(135deg, #34d399, #16c784);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #818cf8, #6366f1);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+/* ============================================
+   ROLE BADGES
+   ============================================ */
+.role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.role-bat   { background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.25); }
+.role-bowl  { background: rgba(239,68,68,0.15);  color: #f87171; border: 1px solid rgba(239,68,68,0.25); }
+.role-ar    { background: rgba(124,58,237,0.15); color: #a78bfa; border: 1px solid rgba(124,58,237,0.25); }
+.role-wk    { background: rgba(245,158,11,0.15); color: #fbbf24; border: 1px solid rgba(245,158,11,0.25); }
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 0 24px; height: 48px;
+  border-radius: var(--radius-md);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700; font-size: 14px; letter-spacing: 0.03em;
+  border: none; cursor: pointer; white-space: nowrap;
+  transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+  position: relative; overflow: hidden;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0);
+  transition: background 0.2s;
+}
+.btn:hover::after { background: rgba(255,255,255,0.05); }
+.btn:active { transform: scale(0.97); }
+
+.btn-primary {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #fff;
+  box-shadow: 0 4px 20px var(--primary-glow);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px var(--primary-glow);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #fbbf24, #d97706);
+  color: #1c0a00;
+  box-shadow: 0 4px 20px var(--gold-glow);
+  font-size: 15px;
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px var(--gold-glow);
+}
+
+.btn-green {
+  background: linear-gradient(135deg, #22d3a0, #16c784);
+  color: #022c22;
+  box-shadow: 0 4px 20px var(--green-glow);
+}
+.btn-green:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px var(--green-glow);
+}
+
+.btn-ghost {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border-mid);
+  color: var(--text);
+}
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--border-hi);
+}
+
+.btn-lg  { height: 58px; padding: 0 36px; font-size: 16px; }
+.btn-xl  { height: 68px; padding: 0 48px; font-size: 18px; border-radius: var(--radius-lg); }
+.btn-sm  { height: 36px; padding: 0 16px; font-size: 12px; }
+
+.btn:disabled {
+  opacity: 0.4; cursor: not-allowed; transform: none !important;
+}
+
+/* ============================================
+   INPUTS
+   ============================================ */
+.input {
+  width: 100%;
+  background: rgba(8,12,24,0.8);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-md);
+  padding: 0 16px;
+  height: 52px;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.input::placeholder { color: var(--text-faint); }
+
+.input:focus {
+  border-color: var(--primary-light);
+  background: rgba(8,12,24,1);
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+
+.input-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+
+/* ============================================
+   DIVIDER
+   ============================================ */
+.divider {
+  display: flex; align-items: center; gap: 14px;
+}
+.divider::before, .divider::after {
+  content: ''; flex: 1; height: 1px; background: var(--border);
+}
+.divider span {
+  font-size: 11px; font-weight: 700; color: var(--text-faint);
+  text-transform: uppercase; letter-spacing: 0.1em;
+}
+
+/* ============================================
+   STAT PILL
+   ============================================ */
+.stat-pill {
+  display: flex; flex-direction: column;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px 20px;
+  min-width: 100px;
+}
+.stat-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-dim); margin-bottom: 4px;
+}
+.stat-value { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+
+/* ============================================
+   TEAM CARD (right panel)
+   ============================================ */
+.team-row {
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  transition: all 0.2s;
+}
+.team-row.leading {
+  border-color: rgba(245,166,35,0.4);
+  background: rgba(245,166,35,0.05);
+  box-shadow: 0 0 20px rgba(245,166,35,0.08);
+}
+.team-row.active-bidder {
+  border-color: rgba(99,102,241,0.5);
+  background: rgba(79,70,229,0.08);
+}
+
+/* Progress bar */
+.progress-bar {
+  height: 4px; border-radius: 2px;
+  background: var(--bg-hover);
+  overflow: hidden; margin-top: 8px;
+}
+.progress-fill {
+  height: 100%; border-radius: 2px;
+  background: linear-gradient(90deg, var(--primary-light), var(--purple));
+  transition: width 0.5s ease;
+}
+
+/* ============================================
+   BID DISPLAY
+   ============================================ */
+.bid-display {
+  background: linear-gradient(135deg, rgba(79,70,229,0.08), rgba(124,58,237,0.08));
+  border: 1px solid rgba(99,102,241,0.2);
+  border-radius: var(--radius-xl);
+  padding: 28px 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.bid-display::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(99,102,241,0.6), transparent);
+}
+
+.bid-amount {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: #fff;
+}
+
+.bid-amount.pulsing {
+  animation: bidPulse 0.4s ease;
+}
+
+@keyframes bidPulse {
+  0%   { text-shadow: 0 0 0 var(--primary-glow); transform: scale(1); }
+  40%  { text-shadow: 0 0 30px var(--gold-glow); transform: scale(1.06); }
+  100% { text-shadow: 0 0 0 transparent; transform: scale(1); }
+}
+
+/* ============================================
+   CIRCULAR TIMER
+   ============================================ */
+.timer-wrap { position: relative; display: inline-block; }
+.timer-bg   { fill: none; stroke: var(--bg-hover); }
+.timer-fill {
+  fill: none;
+  stroke-linecap: round;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  transition: stroke-dashoffset 1s linear, stroke 0.5s;
+}
+.timer-number {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  fill: white;
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+
+/* ============================================
+   PLAYER AVATAR
+   ============================================ */
+.player-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(79,70,229,0.3), rgba(124,58,237,0.3));
+  border: 2px solid rgba(99,102,241,0.4);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
+  box-shadow: 0 0 0 6px rgba(79,70,229,0.08), 0 0 40px rgba(79,70,229,0.15);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.player-avatar.large {
+  width: 160px; height: 160px; font-size: 56px;
+  box-shadow: 0 0 0 8px rgba(79,70,229,0.08), 0 0 60px rgba(79,70,229,0.18);
+}
+
+/* ============================================
+   RATING STARS
+   ============================================ */
+.stars {
+  display: flex; gap: 3px; align-items: center;
+}
+.star { color: var(--text-faint); font-size: 14px; }
+.star.filled { color: var(--gold); }
+
+/* ============================================
+   SQUAD LIST ITEM
+   ============================================ */
+.squad-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  transition: background 0.15s;
+}
+.squad-item:hover { background: var(--bg-hover); }
+.squad-avatar {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--purple));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 800; flex-shrink: 0;
+}
+
+/* ============================================
+   RESULT PODIUM CARD
+   ============================================ */
+.podium-card {
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  text-align: center;
+  transition: transform 0.2s;
+}
+.podium-card:hover { transform: translateY(-4px); }
+.podium-card.gold-card {
+  background: linear-gradient(135deg, rgba(245,166,35,0.1), rgba(217,119,6,0.05));
+  border-color: rgba(245,166,35,0.3);
+  box-shadow: 0 0 40px rgba(245,166,35,0.1);
+}
+
+/* ============================================
+   TOAST / NOTIFICATION
+   ============================================ */
+.toast {
+  position: fixed;
+  bottom: 28px; right: 28px;
+  z-index: 9999;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-mid);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  min-width: 280px; max-width: 380px;
+}
+.toast-error {
+  background: rgba(15,8,8,0.95);
+  border-color: rgba(239,68,68,0.3);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(239,68,68,0.15);
+}
+.toast-success {
+  background: rgba(8,15,12,0.95);
+  border-color: rgba(22,199,132,0.3);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(22,199,132,0.15);
+}
+.toast-icon { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.toast-icon-error  { background: rgba(239,68,68,0.15); color: var(--red); }
+.toast-icon-success{ background: rgba(22,199,132,0.15); color: var(--green); }
+
+/* ============================================
+   LOBBY PLAYER ROW
+   ============================================ */
+.lobby-player {
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+.lobby-player:hover { border-color: var(--border-mid); background: var(--bg-hover); }
+.lobby-avatar {
+  width: 48px; height: 48px; border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 18px; flex-shrink: 0;
+  letter-spacing: -0.02em;
+}
+
+/* ============================================
+   GLOW EFFECTS
+   ============================================ */
+.glow-green  { box-shadow: 0 0 24px var(--green-glow); }
+.glow-gold   { box-shadow: 0 0 24px var(--gold-glow); }
+.glow-purple { box-shadow: 0 0 24px var(--primary-glow); }
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-mid); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border-hi); }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .mobile-hidden { display: none !important; }
+  .mobile-full   { width: 100% !important; }
+  .bid-amount    { font-size: 52px; }
+  .player-avatar.large { width: 110px; height: 110px; font-size: 38px; }
+}

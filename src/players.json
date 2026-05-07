@@ -1,0 +1,1154 @@
+[
+  {
+    "name": "Virat Kohli",
+    "role": "BAT",
+    "base": 1,
+    "rating": 8.1,
+    "team": "UNSOLD",
+    "id": 1
+  },
+  {
+    "name": "Rohit Sharma",
+    "role": "BAT",
+    "base": 1.5,
+    "rating": 7.6,
+    "team": "UNSOLD",
+    "id": 2
+  },
+  {
+    "name": "Shubman Gill",
+    "role": "BAT",
+    "base": 2,
+    "rating": 8,
+    "team": "UNSOLD",
+    "id": 3
+  },
+  {
+    "name": "KL Rahul",
+    "role": "WK",
+    "base": 1,
+    "rating": 9.2,
+    "team": "UNSOLD",
+    "id": 4
+  },
+  {
+    "name": "David Warner",
+    "role": "BAT",
+    "base": 0.5,
+    "rating": 8.7,
+    "team": "UNSOLD",
+    "id": 5
+  },
+  {
+    "name": "Steve Smith",
+    "role": "BAT",
+    "base": 0.5,
+    "rating": 7.9,
+    "team": "UNSOLD",
+    "id": 6
+  },
+  {
+    "name": "Kane Williamson",
+    "role": "BAT",
+    "base": 2,
+    "rating": 8.5,
+    "team": "UNSOLD",
+    "id": 7
+  },
+  {
+    "name": "Joe Root",
+    "role": "BAT",
+    "base": 1.5,
+    "rating": 8.7,
+    "team": "UNSOLD",
+    "id": 8
+  },
+  {
+    "name": "Babar Azam",
+    "role": "BAT",
+    "base": 0.5,
+    "rating": 9.2,
+    "team": "UNSOLD",
+    "id": 9
+  },
+  {
+    "name": "Suryakumar Yadav",
+    "role": "BAT",
+    "base": 2,
+    "rating": 7.6,
+    "team": "UNSOLD",
+    "id": 10
+  },
+  {
+    "name": "Ruturaj Gaikwad",
+    "role": "BAT",
+    "base": 0.5,
+    "rating": 8,
+    "team": "UNSOLD",
+    "id": 11
+  },
+  {
+    "name": "Yashasvi Jaiswal",
+    "role": "BAT",
+    "base": 0.5,
+    "rating": 8,
+    "team": "UNSOLD",
+    "id": 12
+  },
+  {
+    "name": "Devon Conway",
+    "role": "BAT",
+    "base": 1,
+    "rating": 8.3,
+    "team": "UNSOLD",
+    "id": 13
+  },
+  {
+    "name": "Faf du Plessis",
+    "role": "BAT",
+    "base": 1.5,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 14
+  },
+  {
+    "name": "Shreyas Iyer",
+    "role": "BAT",
+    "base": 2,
+    "rating": 8.1,
+    "team": "UNSOLD",
+    "id": 15
+  },
+  {
+    "name": "Ishan Kishan",
+    "role": "WK",
+    "base": 0.5,
+    "rating": 9,
+    "team": "UNSOLD",
+    "id": 16
+  },
+  {
+    "name": "Prithvi Shaw",
+    "role": "BAT",
+    "base": 1.5,
+    "rating": 9.3,
+    "team": "UNSOLD",
+    "id": 17
+  },
+  {
+    "name": "Rahul Tripathi",
+    "role": "BAT",
+    "base": 0.5,
+    "rating": 8.1,
+    "team": "UNSOLD",
+    "id": 18
+  },
+  {
+    "name": "Tilak Varma",
+    "role": "BAT",
+    "base": 0.5,
+    "rating": 9.3,
+    "team": "UNSOLD",
+    "id": 19
+  },
+  {
+    "name": "Aiden Markram",
+    "role": "BAT",
+    "base": 0.5,
+    "rating": 8.3,
+    "team": "UNSOLD",
+    "id": 20
+  },
+  {
+    "name": "Harry Brook",
+    "role": "BAT",
+    "base": 1.5,
+    "rating": 8.6,
+    "team": "UNSOLD",
+    "id": 21
+  },
+  {
+    "name": "Travis Head",
+    "role": "BAT",
+    "base": 2,
+    "rating": 8.4,
+    "team": "UNSOLD",
+    "id": 22
+  },
+  {
+    "name": "Dawid Malan",
+    "role": "BAT",
+    "base": 1.5,
+    "rating": 7.8,
+    "team": "UNSOLD",
+    "id": 23
+  },
+  {
+    "name": "Glenn Phillips",
+    "role": "BAT",
+    "base": 1,
+    "rating": 7.6,
+    "team": "UNSOLD",
+    "id": 24
+  },
+  {
+    "name": "Nicholas Pooran",
+    "role": "WK",
+    "base": 1.5,
+    "rating": 8.4,
+    "team": "UNSOLD",
+    "id": 25
+  },
+  {
+    "name": "Shimron Hetmyer",
+    "role": "BAT",
+    "base": 2,
+    "rating": 7.6,
+    "team": "UNSOLD",
+    "id": 26
+  },
+  {
+    "name": "Liam Livingstone",
+    "role": "BAT",
+    "base": 0.5,
+    "rating": 8.8,
+    "team": "UNSOLD",
+    "id": 27
+  },
+  {
+    "name": "Tim David",
+    "role": "BAT",
+    "base": 0.5,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 28
+  },
+  {
+    "name": "Rinku Singh",
+    "role": "BAT",
+    "base": 2,
+    "rating": 9,
+    "team": "UNSOLD",
+    "id": 29
+  },
+  {
+    "name": "Nitish Rana",
+    "role": "BAT",
+    "base": 1,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 30
+  },
+  {
+    "name": "Manish Pandey",
+    "role": "BAT",
+    "base": 1.5,
+    "rating": 7.8,
+    "team": "UNSOLD",
+    "id": 31
+  },
+  {
+    "name": "Ajinkya Rahane",
+    "role": "BAT",
+    "base": 1,
+    "rating": 8.8,
+    "team": "UNSOLD",
+    "id": 32
+  },
+  {
+    "name": "Ambati Rayudu",
+    "role": "BAT",
+    "base": 1,
+    "rating": 8.5,
+    "team": "UNSOLD",
+    "id": 33
+  },
+  {
+    "name": "Mayank Agarwal",
+    "role": "BAT",
+    "base": 1.5,
+    "rating": 9.3,
+    "team": "UNSOLD",
+    "id": 34
+  },
+  {
+    "name": "Devdutt Padikkal",
+    "role": "BAT",
+    "base": 2,
+    "rating": 9.3,
+    "team": "UNSOLD",
+    "id": 35
+  },
+  {
+    "name": "Abhishek Sharma",
+    "role": "BAT",
+    "base": 1.5,
+    "rating": 8.2,
+    "team": "UNSOLD",
+    "id": 36
+  },
+  {
+    "name": "Rahul Tewatia",
+    "role": "BAT",
+    "base": 2,
+    "rating": 8.2,
+    "team": "UNSOLD",
+    "id": 37
+  },
+  {
+    "name": "Sarfaraz Khan",
+    "role": "BAT",
+    "base": 1.5,
+    "rating": 8.3,
+    "team": "UNSOLD",
+    "id": 38
+  },
+  {
+    "name": "KS Bharat",
+    "role": "WK",
+    "base": 2,
+    "rating": 8.4,
+    "team": "UNSOLD",
+    "id": 39
+  },
+  {
+    "name": "Rajat Patidar",
+    "role": "BAT",
+    "base": 1,
+    "rating": 9.4,
+    "team": "UNSOLD",
+    "id": 40
+  },
+  {
+    "name": "Anmolpreet Singh",
+    "role": "BAT",
+    "base": 1,
+    "rating": 9.5,
+    "team": "UNSOLD",
+    "id": 41
+  },
+  {
+    "name": "Priyam Garg",
+    "role": "BAT",
+    "base": 2,
+    "rating": 8.2,
+    "team": "UNSOLD",
+    "id": 42
+  },
+  {
+    "name": "Karun Nair",
+    "role": "BAT",
+    "base": 1,
+    "rating": 8.4,
+    "team": "UNSOLD",
+    "id": 43
+  },
+  {
+    "name": "Deepak Hooda",
+    "role": "BAT",
+    "base": 0.5,
+    "rating": 8.2,
+    "team": "UNSOLD",
+    "id": 44
+  },
+  {
+    "name": "Wriddhiman Saha",
+    "role": "WK",
+    "base": 1,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 45
+  },
+  {
+    "name": "Tom Banton",
+    "role": "WK",
+    "base": 1.5,
+    "rating": 8.6,
+    "team": "UNSOLD",
+    "id": 46
+  },
+  {
+    "name": "Will Jacks",
+    "role": "BAT",
+    "base": 1.5,
+    "rating": 8.5,
+    "team": "UNSOLD",
+    "id": 47
+  },
+  {
+    "name": "Ben Duckett",
+    "role": "BAT",
+    "base": 0.5,
+    "rating": 7.7,
+    "team": "UNSOLD",
+    "id": 48
+  },
+  {
+    "name": "Alex Hales",
+    "role": "BAT",
+    "base": 2,
+    "rating": 9.3,
+    "team": "UNSOLD",
+    "id": 49
+  },
+  {
+    "name": "Jason Roy",
+    "role": "BAT",
+    "base": 2,
+    "rating": 8.6,
+    "team": "UNSOLD",
+    "id": 50
+  },
+  {
+    "name": "Jasprit Bumrah",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 7.6,
+    "team": "UNSOLD",
+    "id": 51
+  },
+  {
+    "name": "Mohammed Shami",
+    "role": "BOWL",
+    "base": 0.5,
+    "rating": 8.9,
+    "team": "UNSOLD",
+    "id": 52
+  },
+  {
+    "name": "Mohammed Siraj",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 7.9,
+    "team": "UNSOLD",
+    "id": 53
+  },
+  {
+    "name": "Bhuvneshwar Kumar",
+    "role": "BOWL",
+    "base": 2,
+    "rating": 8.9,
+    "team": "UNSOLD",
+    "id": 54
+  },
+  {
+    "name": "Deepak Chahar",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 7.9,
+    "team": "UNSOLD",
+    "id": 55
+  },
+  {
+    "name": "Arshdeep Singh",
+    "role": "BOWL",
+    "base": 2,
+    "rating": 9.3,
+    "team": "UNSOLD",
+    "id": 56
+  },
+  {
+    "name": "Avesh Khan",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 8,
+    "team": "UNSOLD",
+    "id": 57
+  },
+  {
+    "name": "Umran Malik",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 8.8,
+    "team": "UNSOLD",
+    "id": 58
+  },
+  {
+    "name": "Kuldeep Yadav",
+    "role": "BOWL",
+    "base": 2,
+    "rating": 8,
+    "team": "UNSOLD",
+    "id": 59
+  },
+  {
+    "name": "Yuzvendra Chahal",
+    "role": "BOWL",
+    "base": 0.5,
+    "rating": 8.2,
+    "team": "UNSOLD",
+    "id": 60
+  },
+  {
+    "name": "Ravi Bishnoi",
+    "role": "BOWL",
+    "base": 0.5,
+    "rating": 9.2,
+    "team": "UNSOLD",
+    "id": 61
+  },
+  {
+    "name": "Ravichandran Ashwin",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 62
+  },
+  {
+    "name": "Mitchell Starc",
+    "role": "BOWL",
+    "base": 0.5,
+    "rating": 8.6,
+    "team": "UNSOLD",
+    "id": 63
+  },
+  {
+    "name": "Pat Cummins",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 8.8,
+    "team": "UNSOLD",
+    "id": 64
+  },
+  {
+    "name": "Josh Hazlewood",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 7.7,
+    "team": "UNSOLD",
+    "id": 65
+  },
+  {
+    "name": "Trent Boult",
+    "role": "BOWL",
+    "base": 0.5,
+    "rating": 8.1,
+    "team": "UNSOLD",
+    "id": 66
+  },
+  {
+    "name": "Kagiso Rabada",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 7.7,
+    "team": "UNSOLD",
+    "id": 67
+  },
+  {
+    "name": "Anrich Nortje",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 8.3,
+    "team": "UNSOLD",
+    "id": 68
+  },
+  {
+    "name": "Lockie Ferguson",
+    "role": "BOWL",
+    "base": 0.5,
+    "rating": 9.2,
+    "team": "UNSOLD",
+    "id": 69
+  },
+  {
+    "name": "Mark Wood",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 7.6,
+    "team": "UNSOLD",
+    "id": 70
+  },
+  {
+    "name": "Adil Rashid",
+    "role": "BOWL",
+    "base": 2,
+    "rating": 9,
+    "team": "UNSOLD",
+    "id": 71
+  },
+  {
+    "name": "Tabraiz Shamsi",
+    "role": "BOWL",
+    "base": 2,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 72
+  },
+  {
+    "name": "Wanindu Hasaranga",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 7.8,
+    "team": "UNSOLD",
+    "id": 73
+  },
+  {
+    "name": "Mustafizur Rahman",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 8.2,
+    "team": "UNSOLD",
+    "id": 74
+  },
+  {
+    "name": "T Natarajan",
+    "role": "BOWL",
+    "base": 0.5,
+    "rating": 9.4,
+    "team": "UNSOLD",
+    "id": 75
+  },
+  {
+    "name": "Chetan Sakariya",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 9,
+    "team": "UNSOLD",
+    "id": 76
+  },
+  {
+    "name": "Kartik Tyagi",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 8.9,
+    "team": "UNSOLD",
+    "id": 77
+  },
+  {
+    "name": "Kamlesh Nagarkoti",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 9,
+    "team": "UNSOLD",
+    "id": 78
+  },
+  {
+    "name": "Prasidh Krishna",
+    "role": "BOWL",
+    "base": 0.5,
+    "rating": 8.6,
+    "team": "UNSOLD",
+    "id": 79
+  },
+  {
+    "name": "Umesh Yadav",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 80
+  },
+  {
+    "name": "Ishant Sharma",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 7.6,
+    "team": "UNSOLD",
+    "id": 81
+  },
+  {
+    "name": "Jaydev Unadkat",
+    "role": "BOWL",
+    "base": 2,
+    "rating": 8.8,
+    "team": "UNSOLD",
+    "id": 82
+  },
+  {
+    "name": "Sandeep Sharma",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 8.9,
+    "team": "UNSOLD",
+    "id": 83
+  },
+  {
+    "name": "Mohsin Khan",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 8.1,
+    "team": "UNSOLD",
+    "id": 84
+  },
+  {
+    "name": "Mayank Markande",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 8.1,
+    "team": "UNSOLD",
+    "id": 85
+  },
+  {
+    "name": "Rahul Chahar",
+    "role": "BOWL",
+    "base": 2,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 86
+  },
+  {
+    "name": "Murugan Ashwin",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 8.8,
+    "team": "UNSOLD",
+    "id": 87
+  },
+  {
+    "name": "Noor Ahmad",
+    "role": "BOWL",
+    "base": 0.5,
+    "rating": 9.2,
+    "team": "UNSOLD",
+    "id": 88
+  },
+  {
+    "name": "Naveen-ul-Haq",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 8.6,
+    "team": "UNSOLD",
+    "id": 89
+  },
+  {
+    "name": "Alzarri Joseph",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 8.8,
+    "team": "UNSOLD",
+    "id": 90
+  },
+  {
+    "name": "Jason Behrendorff",
+    "role": "BOWL",
+    "base": 2,
+    "rating": 7.5,
+    "team": "UNSOLD",
+    "id": 91
+  },
+  {
+    "name": "Reece Topley",
+    "role": "BOWL",
+    "base": 2,
+    "rating": 8.5,
+    "team": "UNSOLD",
+    "id": 92
+  },
+  {
+    "name": "Chris Woakes",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 7.9,
+    "team": "UNSOLD",
+    "id": 93
+  },
+  {
+    "name": "David Willey",
+    "role": "BOWL",
+    "base": 2,
+    "rating": 9.5,
+    "team": "UNSOLD",
+    "id": 94
+  },
+  {
+    "name": "Luke Wood",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 8.9,
+    "team": "UNSOLD",
+    "id": 95
+  },
+  {
+    "name": "Dushmantha Chameera",
+    "role": "BOWL",
+    "base": 0.5,
+    "rating": 7.7,
+    "team": "UNSOLD",
+    "id": 96
+  },
+  {
+    "name": "Lahiru Kumara",
+    "role": "BOWL",
+    "base": 1,
+    "rating": 8,
+    "team": "UNSOLD",
+    "id": 97
+  },
+  {
+    "name": "Blessing Muzarabani",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 8.6,
+    "team": "UNSOLD",
+    "id": 98
+  },
+  {
+    "name": "Obed McCoy",
+    "role": "BOWL",
+    "base": 1.5,
+    "rating": 9.2,
+    "team": "UNSOLD",
+    "id": 99
+  },
+  {
+    "name": "Richard Gleeson",
+    "role": "BOWL",
+    "base": 0.5,
+    "rating": 8.8,
+    "team": "UNSOLD",
+    "id": 100
+  },
+  {
+    "name": "Hardik Pandya",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 8.9,
+    "team": "UNSOLD",
+    "id": 101
+  },
+  {
+    "name": "Ravindra Jadeja",
+    "role": "AR",
+    "base": 1.5,
+    "rating": 8.4,
+    "team": "UNSOLD",
+    "id": 102
+  },
+  {
+    "name": "Axar Patel",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 103
+  },
+  {
+    "name": "Washington Sundar",
+    "role": "AR",
+    "base": 2,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 104
+  },
+  {
+    "name": "Shivam Dube",
+    "role": "AR",
+    "base": 2,
+    "rating": 8.5,
+    "team": "UNSOLD",
+    "id": 105
+  },
+  {
+    "name": "Venkatesh Iyer",
+    "role": "AR",
+    "base": 1.5,
+    "rating": 8.8,
+    "team": "UNSOLD",
+    "id": 106
+  },
+  {
+    "name": "Krunal Pandya",
+    "role": "AR",
+    "base": 2,
+    "rating": 7.6,
+    "team": "UNSOLD",
+    "id": 107
+  },
+  {
+    "name": "Shardul Thakur",
+    "role": "AR",
+    "base": 2,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 108
+  },
+  {
+    "name": "Ben Stokes",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 9.5,
+    "team": "UNSOLD",
+    "id": 109
+  },
+  {
+    "name": "Sam Curran",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 8.1,
+    "team": "UNSOLD",
+    "id": 110
+  },
+  {
+    "name": "Cameron Green",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 7.9,
+    "team": "UNSOLD",
+    "id": 111
+  },
+  {
+    "name": "Glenn Maxwell",
+    "role": "AR",
+    "base": 1.5,
+    "rating": 7.6,
+    "team": "UNSOLD",
+    "id": 112
+  },
+  {
+    "name": "Marcus Stoinis",
+    "role": "AR",
+    "base": 1.5,
+    "rating": 8.9,
+    "team": "UNSOLD",
+    "id": 113
+  },
+  {
+    "name": "Moeen Ali",
+    "role": "AR",
+    "base": 1,
+    "rating": 7.6,
+    "team": "UNSOLD",
+    "id": 114
+  },
+  {
+    "name": "Andre Russell",
+    "role": "AR",
+    "base": 2,
+    "rating": 8.3,
+    "team": "UNSOLD",
+    "id": 115
+  },
+  {
+    "name": "Jason Holder",
+    "role": "AR",
+    "base": 2,
+    "rating": 7.9,
+    "team": "UNSOLD",
+    "id": 116
+  },
+  {
+    "name": "Mitchell Marsh",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 9.2,
+    "team": "UNSOLD",
+    "id": 117
+  },
+  {
+    "name": "Chris Jordan",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 8.1,
+    "team": "UNSOLD",
+    "id": 118
+  },
+  {
+    "name": "Daniel Sams",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 8.5,
+    "team": "UNSOLD",
+    "id": 119
+  },
+  {
+    "name": "Odean Smith",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 8.8,
+    "team": "UNSOLD",
+    "id": 120
+  },
+  {
+    "name": "Romario Shepherd",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 8.4,
+    "team": "UNSOLD",
+    "id": 121
+  },
+  {
+    "name": "Dwayne Bravo",
+    "role": "AR",
+    "base": 2,
+    "rating": 8.5,
+    "team": "UNSOLD",
+    "id": 122
+  },
+  {
+    "name": "Shahbaz Ahmed",
+    "role": "AR",
+    "base": 1.5,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 123
+  },
+  {
+    "name": "Vijay Shankar",
+    "role": "AR",
+    "base": 2,
+    "rating": 7.8,
+    "team": "UNSOLD",
+    "id": 124
+  },
+  {
+    "name": "Nitish Kumar Reddy",
+    "role": "AR",
+    "base": 2,
+    "rating": 8.5,
+    "team": "UNSOLD",
+    "id": 125
+  },
+  {
+    "name": "Rishi Dhawan",
+    "role": "AR",
+    "base": 1,
+    "rating": 7.9,
+    "team": "UNSOLD",
+    "id": 126
+  },
+  {
+    "name": "Harshal Patel",
+    "role": "AR",
+    "base": 1,
+    "rating": 8.6,
+    "team": "UNSOLD",
+    "id": 127
+  },
+  {
+    "name": "Sikandar Raza",
+    "role": "AR",
+    "base": 1.5,
+    "rating": 8.4,
+    "team": "UNSOLD",
+    "id": 128
+  },
+  {
+    "name": "Dasun Shanaka",
+    "role": "AR",
+    "base": 1.5,
+    "rating": 9.3,
+    "team": "UNSOLD",
+    "id": 129
+  },
+  {
+    "name": "Mohammad Nabi",
+    "role": "AR",
+    "base": 1.5,
+    "rating": 8.1,
+    "team": "UNSOLD",
+    "id": 130
+  },
+  {
+    "name": "Shakib Al Hasan",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 7.9,
+    "team": "UNSOLD",
+    "id": 131
+  },
+  {
+    "name": "Colin Munro",
+    "role": "AR",
+    "base": 1,
+    "rating": 8.8,
+    "team": "UNSOLD",
+    "id": 132
+  },
+  {
+    "name": "Jimmy Neesham",
+    "role": "AR",
+    "base": 1,
+    "rating": 8.2,
+    "team": "UNSOLD",
+    "id": 133
+  },
+  {
+    "name": "Carlos Brathwaite",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 7.7,
+    "team": "UNSOLD",
+    "id": 134
+  },
+  {
+    "name": "Roston Chase",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 8.7,
+    "team": "UNSOLD",
+    "id": 135
+  },
+  {
+    "name": "Fabian Allen",
+    "role": "AR",
+    "base": 1.5,
+    "rating": 7.7,
+    "team": "UNSOLD",
+    "id": 136
+  },
+  {
+    "name": "Mitchell Santner",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 8.9,
+    "team": "UNSOLD",
+    "id": 137
+  },
+  {
+    "name": "Ashton Agar",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 9,
+    "team": "UNSOLD",
+    "id": 138
+  },
+  {
+    "name": "Sean Abbott",
+    "role": "AR",
+    "base": 2,
+    "rating": 9.4,
+    "team": "UNSOLD",
+    "id": 139
+  },
+  {
+    "name": "Michael Bracewell",
+    "role": "AR",
+    "base": 1.5,
+    "rating": 8.4,
+    "team": "UNSOLD",
+    "id": 140
+  },
+  {
+    "name": "Aaron Hardie",
+    "role": "AR",
+    "base": 1.5,
+    "rating": 7.7,
+    "team": "UNSOLD",
+    "id": 141
+  },
+  {
+    "name": "Marco Jansen",
+    "role": "AR",
+    "base": 0.5,
+    "rating": 8.9,
+    "team": "UNSOLD",
+    "id": 142
+  },
+  {
+    "name": "Azmatullah Omarzai",
+    "role": "AR",
+    "base": 2,
+    "rating": 9.2,
+    "team": "UNSOLD",
+    "id": 143
+  },
+  {
+    "name": "Gulbadin Naib",
+    "role": "AR",
+    "base": 1.5,
+    "rating": 9.1,
+    "team": "UNSOLD",
+    "id": 144
+  }
+]
