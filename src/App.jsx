@@ -8,8 +8,9 @@ import LobbyScreen    from './LobbyScreen.jsx';
 import AuctionScreen  from './AuctionScreen.jsx';
 import FinishedScreen from './FinishedScreen.jsx';
 
-// In production, undefined means it connects to the host serving the page.
-const socket = io(import.meta.env.PROD ? undefined : 'http://localhost:5000');
+// Connect to the same origin if in production, else localhost:5000
+const socketUrl = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '/';
+const socket = io(socketUrl);
 
 export default function App() {
   const [view,  setView]  = useState('landing');
