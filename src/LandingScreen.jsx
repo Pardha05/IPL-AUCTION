@@ -30,7 +30,7 @@ export default function LandingScreen({ onCreate, onJoin }) {
       <motion.div 
         initial={{ opacity: 0, y: 30 }} 
         animate={{ opacity: 1, y: 0 }} 
-        className="glass-elevated"
+        className="glass-elevated mobile-stack"
         style={{ width: '100%', maxWidth: 1000, display: 'flex', borderRadius: 24, overflow: 'hidden', position: 'relative', zIndex: 10 }}
       >
         {/* Left hero section */}
@@ -79,7 +79,7 @@ export default function LandingScreen({ onCreate, onJoin }) {
         </div>
 
         {/* Right form section */}
-        <div style={{ flex: 1, padding: '60px 50px', background: 'rgba(8,12,24,0.4)', display: 'flex', flexDirection: 'column' }}>
+        <div className="responsive-padding" style={{ flex: 1, padding: '60px 50px', background: 'rgba(8,12,24,0.4)', display: 'flex', flexDirection: 'column' }}>
           <div style={{ marginBottom: 40 }}>
             <h2 style={{ fontFamily: 'Rajdhani, sans-serif', fontSize: 32, fontWeight: 700, color: 'white', marginBottom: 8 }}>Start Your Journey</h2>
             <p style={{ color: '#8892a4', fontSize: 14 }}>Create a room or join your friends' auction.</p>

@@ -15,11 +15,12 @@ export default function LobbyScreen({ room, myId, onStart }) {
   };
 
   return (
-    <div style={{ minHeight: '100vh', padding: '32px 24px', maxWidth: 960, margin: '0 auto', position: 'relative', zIndex: 1 }}>
+    <div className="responsive-padding" style={{ minHeight: '100vh', padding: '32px 24px', maxWidth: 960, margin: '0 auto', position: 'relative', zIndex: 1 }}>
       <div className="stadium-bg" />
 
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -16 }} animate={{ opacity: 1, y: 0 }}
+        className="mobile-stack"
         style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 40, flexWrap: 'wrap', gap: 16 }}>
         <div>
           <div style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#6366f1', marginBottom: 6 }}>Auction Lobby</div>
@@ -55,7 +56,7 @@ export default function LobbyScreen({ room, myId, onStart }) {
         </div>
       </motion.div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 320px', gap: 24 }}>
+      <div className="responsive-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 320px', gap: 24 }}>
         {/* Players grid */}
         <div className="glass" style={{ borderRadius: 24, padding: 32 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 28 }}>

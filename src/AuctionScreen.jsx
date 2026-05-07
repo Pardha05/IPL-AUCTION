@@ -42,7 +42,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
       <div className="stadium-bg" />
 
       {/* ── TOP NAV ── */}
-      <header className="glass" style={{ borderRadius: 0, border: 'none', borderBottom: '1px solid rgba(255,255,255,0.06)', padding: '0 32px', display: 'flex', alignItems: 'center', gap: 24, height: 72, position: 'relative', zIndex: 100 }}>
+      <header className="glass mobile-stack" style={{ borderRadius: 0, border: 'none', borderBottom: '1px solid rgba(255,255,255,0.06)', padding: '0 32px', display: 'flex', alignItems: 'center', gap: 24, height: 'auto', minHeight: 72, position: 'relative', zIndex: 100 }}>
         <div style={{ fontFamily: 'Rajdhani,sans-serif', fontWeight: 800, fontSize: 24, letterSpacing: '-0.02em' }}>
           IPL <span className="text-gradient-primary">AUCTION</span>
         </div>
@@ -99,17 +99,17 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
           ))}
         </div>
 
-        <div style={{ padding: '0 24px', textAlign: 'center' }}>
+        <div className="mobile-hidden" style={{ padding: '0 24px', textAlign: 'center' }}>
           <div style={{ fontSize: 9, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#8892a4', marginBottom: 2 }}>Player</div>
           <div style={{ fontSize: 16, fontWeight: 800 }}>{room.currentPlayerIndex + 1}<span style={{ color: '#4a5568', fontSize: 12 }}>/{room.players.length}</span></div>
         </div>
       </header>
 
       {/* ── MAIN LAYOUT ── */}
-      <div style={{ flex: 1, display: 'grid', gridTemplateColumns: '340px 1fr 320px', gap: 0, overflow: 'hidden', position: 'relative', zIndex: 10 }}>
+      <div className="responsive-grid" style={{ flex: 1, display: 'grid', gridTemplateColumns: '340px 1fr 320px', gap: 0, overflowY: 'auto', overflowX: 'hidden', position: 'relative', zIndex: 10 }}>
         
         {/* ── LEFT: Player & My Squad ── */}
-        <aside style={{ borderRight: '1px solid rgba(255,255,255,0.06)', padding: 24, overflowY: 'auto', background: 'rgba(8,12,24,0.3)', display: 'flex', flexDirection: 'column', gap: 24 }}>
+        <aside className="responsive-padding" style={{ borderRight: '1px solid rgba(255,255,255,0.06)', padding: 24, overflowY: 'visible', background: 'rgba(8,12,24,0.3)', display: 'flex', flexDirection: 'column', gap: 24 }}>
           <AnimatePresence mode="wait">
             <motion.div key={player.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}>
               <div style={{ textAlign: 'center', padding: '32px 20px', background: 'rgba(255,255,255,0.03)', borderRadius: 24, border: '1px solid rgba(255,255,255,0.06)', position: 'relative', overflow: 'hidden' }}>
@@ -168,7 +168,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
         </aside>
 
         {/* ── CENTER: Bidding Arena ── */}
-        <main style={{ padding: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 32, overflowY: 'auto' }}>
+        <main className="responsive-padding" style={{ padding: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 32, overflowY: 'auto' }}>
           <div style={{ textAlign: 'center' }}>
             {room.status === 'paused' ? (
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 20px', background: 'rgba(245,166,35,0.1)', border: '1px solid rgba(245,166,35,0.2)', borderRadius: 99, marginBottom: 24 }}>
@@ -225,7 +225,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
         </main>
 
         {/* ── RIGHT: Leaderboard & History ── */}
-        <aside style={{ borderLeft: '1px solid rgba(255,255,255,0.06)', padding: 24, overflowY: 'auto', background: 'rgba(8,12,24,0.3)', display: 'flex', flexDirection: 'column', gap: 24 }}>
+        <aside className="responsive-padding" style={{ borderLeft: '1px solid rgba(255,255,255,0.06)', padding: 24, overflowY: 'auto', background: 'rgba(8,12,24,0.3)', display: 'flex', flexDirection: 'column', gap: 24 }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
               <Users size={16} color="#6366f1" />

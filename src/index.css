@@ -531,4 +531,26 @@ body {
   .mobile-full   { width: 100% !important; }
   .bid-amount    { font-size: 52px; }
   .player-avatar.large { width: 110px; height: 110px; font-size: 38px; }
+  
+  .responsive-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  
+  .responsive-padding {
+    padding: 16px !important;
+  }
+
+  .mobile-stack {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .mobile-center {
+    text-align: center;
+    justify-content: center !important;
+  }
+  
+  h1 { font-size: 32px !important; }
+  .glass { padding: 16px !important; }
 }
