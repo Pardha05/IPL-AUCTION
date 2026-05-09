@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Crown, Wallet, Users, History, ChevronUp, Star, UserCheck, Pause, Play, FastForward, StopCircle, List, X, Copy, CheckCircle2 } from 'lucide-react';
+import { Crown, Users, History, ChevronUp, UserCheck, Pause, Play, FastForward, StopCircle, List, X, Copy, CheckCircle } from 'lucide-react';
 import { RoleBadge, PlayerAvatar, StarRating, CircularTimer, TeamRow, Toast } from './Components.jsx';
 import { ROLE_META, TEAM_COLORS, avgRating } from './data.js';
 
@@ -77,7 +77,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
               <div style={{ fontSize: 9, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#8892a4' }}>Room</div>
               <div style={{ fontFamily: 'monospace', fontSize: 16, fontWeight: 900, letterSpacing: '0.15em', color: '#fbbf24' }}>{room.id}</div>
               <button onClick={copyRoomCode} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '2px', display: 'flex', color: codeCopied ? '#16c784' : '#8892a4' }}>
-                {codeCopied ? <CheckCircle2 size={14} /> : <Copy size={14} />}
+                {codeCopied ? <CheckCircle size={14} /> : <Copy size={14} />}
               </button>
             </div>
             <button 
