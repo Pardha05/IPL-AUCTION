@@ -32,7 +32,7 @@ export function StarRating({ rating }) {
 export function CircularTimer({ value, max = 15 }) {
   const r = 44, c = 2 * Math.PI * r;
   const offset = c - (value / max) * c;
-  const color = value <= 5 ? '#ef4444' : value <= 10 ? '#f59e0b' : '#6366f1';
+  const color = value <= 5 ? '#ef4444' : value <= 10 ? '#f59e0b' : '#fbbf24';
   return (
     <div className="timer-wrap">
       <svg width="110" height="110" viewBox="0 0 110 110">
@@ -89,7 +89,7 @@ export function TeamRow({ user, rank, isLeading, isBidder, myId }) {
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ fontWeight: 800, fontSize: 14, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'flex', alignItems: 'center', gap: 6, color: 'white' }}>
             {user.teamName}
-            {user.id === myId && <span style={{ fontSize: 9, background: '#6366f133', color: '#818cf8', padding: '2px 8px', borderRadius: 99, fontWeight: 800, border: '1px solid #6366f144' }}>YOU</span>}
+            {user.id === myId && <span style={{ fontSize: 9, background: 'rgba(245,166,35,0.12)', color: '#fbbf24', padding: '2px 8px', borderRadius: 99, fontWeight: 800, border: '1px solid rgba(245,166,35,0.2)' }}>YOU</span>}
           </div>
           <div style={{ fontSize: 11, color: '#8892a4', fontWeight: 600 }}>{user.name}</div>
         </div>

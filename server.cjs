@@ -31,7 +31,7 @@ io.on('connection', (socket) => {
       id, admin: socket.id, status: 'waiting',
       players: [...PLAYERS],
       currentPlayerIndex: 0, currentBid: PLAYERS[0].base,
-      currentBidder: null, timer: 15, history: [],
+      currentBidder: null, timer: 15, history: [], bidLog: [],
       users: [{ id: socket.id, name: playerName, teamName, budget: 150, squad: [] }]
     };
     rooms.set(id, room);
@@ -68,6 +68,7 @@ io.on('connection', (socket) => {
     room.currentPlayerIndex = 0;
     room.currentBid   = room.players[0].base;
     room.currentBidder = null;
+    room.bidLog = [];
     room.timer = 15;
     io.to(roomId).emit('auction_started', room);
     startTimer(roomId);
@@ -83,6 +84,8 @@ io.on('connection', (socket) => {
     if (bidAmount <= room.currentBid) return;
     room.currentBid    = +bidAmount.toFixed(1);
     room.currentBidder = { id: user.id, teamName: user.teamName };
+    room.bidLog = room.bidLog || [];
+    room.bidLog.push({ teamName: user.teamName, amount: room.currentBid, ts: Date.now() });
     room.timer = 15;
     io.to(roomId).emit('bid_updated', room);
   });
@@ -118,6 +121,7 @@ io.on('connection', (socket) => {
       const next = room.players[room.currentPlayerIndex];
       room.currentBid    = next.base;
       room.currentBidder = null;
+      room.bidLog = [];
       room.timer = 15;
       io.to(roomId).emit('player_sold', room);
     } else {
@@ -141,6 +145,7 @@ io.on('connection', (socket) => {
       const next = room.players[room.currentPlayerIndex];
       room.currentBid = next.base;
       room.currentBidder = null;
+      room.bidLog = [];
       room.timer = 15;
       io.to(roomId).emit('player_sold', room); // Using player_sold to update UI
     }
@@ -180,6 +185,7 @@ function startTimer(roomId) {
       const next = room.players[room.currentPlayerIndex];
       room.currentBid    = next.base;
       room.currentBidder = null;
+      room.bidLog = [];
       room.timer = 15;
       io.to(roomId).emit('player_sold', room);
     } else {

@@ -48,6 +48,8 @@ export default function App() {
 
   const handleJoin = (playerName, teamName, roomId) => {
     socket.emit('join_room', { roomId, playerName, teamName });
+    // Show lobby immediately; room data will arrive via room_updated
+    setRoom((prev) => prev || { id: roomId, users: [], admin: null, history: [] });
     setView('lobby');
   };
 

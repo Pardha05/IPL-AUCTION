@@ -23,7 +23,7 @@ export default function LobbyScreen({ room, myId, onStart }) {
         className="mobile-stack"
         style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 40, flexWrap: 'wrap', gap: 16 }}>
         <div>
-          <div style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#6366f1', marginBottom: 6 }}>Auction Lobby</div>
+          <div style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#fbbf24', marginBottom: 6 }}>Auction Lobby</div>
           <h1 style={{ fontFamily: 'Rajdhani, sans-serif', fontSize: 44, fontWeight: 700, letterSpacing: '-0.02em', color: 'white' }}>Waiting Room</h1>
         </div>
         <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
@@ -60,9 +60,9 @@ export default function LobbyScreen({ room, myId, onStart }) {
         {/* Players grid */}
         <div className="glass" style={{ borderRadius: 24, padding: 32 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 28 }}>
-            <Users size={20} color="#6366f1" />
+            <Users size={20} color="#fbbf24" />
             <h2 style={{ fontSize: 18, fontWeight: 700 }}>Franchise Owners</h2>
-            <span style={{ marginLeft: 'auto', background: 'rgba(99,102,241,0.15)', color: '#818cf8', borderRadius: 99, padding: '3px 12px', fontSize: 12, fontWeight: 700 }}>
+            <span style={{ marginLeft: 'auto', background: 'rgba(245,166,35,0.12)', color: '#fbbf24', borderRadius: 99, padding: '3px 12px', fontSize: 12, fontWeight: 700 }}>
               {room?.users?.length || 0} joined
             </span>
           </div>
@@ -78,7 +78,7 @@ export default function LobbyScreen({ room, myId, onStart }) {
                   <div style={{ flex: 1 }}>
                     <div style={{ fontWeight: 700, fontSize: 15, display: 'flex', alignItems: 'center', gap: 6 }}>
                       {u.teamName}
-                      {u.id === myId && <span style={{ fontSize: 9, background: '#6366f122', color: '#818cf8', padding: '2px 7px', borderRadius: 99, fontWeight: 800 }}>YOU</span>}
+                      {u.id === myId && <span style={{ fontSize: 9, background: 'rgba(245,166,35,0.12)', color: '#fbbf24', padding: '2px 7px', borderRadius: 99, fontWeight: 800 }}>YOU</span>}
                     </div>
                     <div style={{ fontSize: 12, color: '#8892a4', marginTop: 2 }}>{u.name}</div>
                   </div>
@@ -88,7 +88,7 @@ export default function LobbyScreen({ room, myId, onStart }) {
             })}
           </div>
           {!isAdmin && (
-            <div style={{ marginTop: 28, padding: '16px 20px', background: 'rgba(99,102,241,0.06)', borderRadius: 14, border: '1px solid rgba(99,102,241,0.15)', textAlign: 'center', color: '#8892a4', fontSize: 14 }}>
+            <div style={{ marginTop: 28, padding: '16px 20px', background: 'rgba(245,166,35,0.05)', borderRadius: 14, border: '1px solid rgba(245,166,35,0.12)', textAlign: 'center', color: '#8892a4', fontSize: 14 }}>
               ⏳ Waiting for the host to start the auction…
             </div>
           )}
@@ -97,7 +97,7 @@ export default function LobbyScreen({ room, myId, onStart }) {
         {/* Rules panel */}
         <div className="glass" style={{ borderRadius: 24, padding: 28, height: 'fit-content' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 24 }}>
-            <Shield size={18} color="#6366f1" />
+            <Shield size={18} color="#fbbf24" />
             <h3 style={{ fontSize: 16, fontWeight: 700 }}>Auction Rules</h3>
           </div>
           {[

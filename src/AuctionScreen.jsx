@@ -12,27 +12,32 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
 
   const player = room.players ? room.players[room.currentPlayerIndex] : null;
   const me = room.users.find(u => u.id === myId);
-  const nextBid = +(room.currentBid + 0.5).toFixed(1);
   const iAmLeading = room.currentBidder?.id === myId;
-  const canBid = !iAmLeading && me?.squad?.length < 11 && me?.budget >= nextBid && room.status === 'active';
   const isAdmin = room.admin === myId;
+  const BID_RAISES = [0.5, 1.0, 2.0, 3.0];
 
-  const handleBid = () => {
-    if (!canBid) {
+  const canBidAmount = (raise) => {
+    const amount = +(room.currentBid + raise).toFixed(1);
+    return !iAmLeading && me?.squad?.length < 11 && me?.budget >= amount && room.status === 'active';
+  };
+
+  const handleBid = (raise) => {
+    const amount = +(room.currentBid + raise).toFixed(1);
+    if (!canBidAmount(raise)) {
       if (room.status === 'paused') return showErr('Auction is paused.');
       if (me?.squad?.length >= 11) return showErr('Squad is full (11/11)');
-      if (me?.budget < nextBid) return showErr(`Insufficient funds. Need ₹${nextBid}Cr`);
+      if (me?.budget < amount) return showErr(`Insufficient funds. Need ₹${amount}Cr`);
       return;
     }
     setBidPulse(true);
     setTimeout(() => setBidPulse(false), 500);
-    onBid(nextBid);
+    onBid(amount);
   };
 
   const showErr = (msg) => { setToast({ msg, type:'error' }); setTimeout(() => setToast(null), 4000); };
 
   const sorted = [...room.users].sort((a,b) => parseFloat(avgRating(b.squad)) - parseFloat(avgRating(a.squad)));
-  const roleColor = { BAT:'#60a5fa', BOWL:'#f87171', AR:'#a78bfa', WK:'#fbbf24' };
+  const roleColor = { BAT:'#34d399', BOWL:'#f87171', AR:'#a78bfa', WK:'#fbbf24' };
   const myColor = TEAM_COLORS[room.users.findIndex(u => u.id === myId) % TEAM_COLORS.length];
 
   if (!player) return null;
@@ -73,7 +78,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
             </button>
             <button 
               onClick={() => setShowPlayers(true)}
-              style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '8px 16px', borderRadius: 8, border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(99,102,241,0.1)', color: '#818cf8', fontWeight: 700, cursor: 'pointer' }}
+              style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '8px 16px', borderRadius: 8, border: '1px solid rgba(245,166,35,0.2)', background: 'rgba(245,166,35,0.08)', color: '#fbbf24', fontWeight: 700, cursor: 'pointer' }}
             >
               <List size={16} /> Players
             </button>
@@ -139,7 +144,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
 
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
-              <UserCheck size={16} color="#6366f1" />
+              <UserCheck size={16} color="#fbbf24" />
               <h3 style={{ fontSize: 13, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#8892a4' }}>My Squad ({me?.squad?.length}/11)</h3>
             </div>
             
@@ -201,26 +206,63 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
             </div>
           </motion.div>
 
+          {/* ── BID ACTIVITY LOG ── */}
+          {room.bidLog && room.bidLog.length > 0 && (
+            <div style={{ width: '100%', maxWidth: 540, background: 'rgba(13,18,36,0.5)', borderRadius: 20, border: '1px solid rgba(255,255,255,0.06)', padding: '16px 20px' }}>
+              <div style={{ fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.15em', color: '#8892a4', marginBottom: 12 }}>Live Bid Activity</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 6, maxHeight: 120, overflowY: 'auto' }}>
+                {[...room.bidLog].reverse().map((b, i) => (
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '6px 10px', borderRadius: 10, background: i === 0 ? 'rgba(245,166,35,0.08)' : 'rgba(255,255,255,0.02)', border: i === 0 ? '1px solid rgba(245,166,35,0.2)' : '1px solid transparent' }}>
+                    <div style={{ width: 6, height: 6, borderRadius: '50%', background: i === 0 ? '#fbbf24' : '#4a5568', flexShrink: 0 }} />
+                    <span style={{ flex: 1, fontSize: 13, fontWeight: 700, color: i === 0 ? '#fbbf24' : '#8892a4' }}>{b.teamName}</span>
+                    <span style={{ fontSize: 13, fontWeight: 900, color: i === 0 ? '#fbbf24' : '#6b7280', fontFamily: 'Rajdhani, sans-serif' }}>₹{b.amount}Cr</span>
+                    {i === 0 && <span style={{ fontSize: 9, fontWeight: 800, color: '#16c784', background: 'rgba(22,199,132,0.1)', padding: '2px 7px', borderRadius: 99, border: '1px solid rgba(22,199,132,0.2)' }}>LEADING</span>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div style={{ width: '100%', maxWidth: 540 }}>
-            <button 
-              className={`btn btn-lg ${canBid ? 'btn-gold' : 'btn-ghost'}`}
-              onClick={handleBid}
-              disabled={!canBid && !iAmLeading}
-              style={{ width: '100%', height: 80, borderRadius: 20, fontSize: 22, fontWeight: 900, gap: 12, position: 'relative' }}
-            >
-              {iAmLeading ? (
-                <><Crown size={24} fill="#16c784" /> Leading — Keep Waiting</>
-              ) : canBid ? (
-                <><ChevronUp size={24} /> RAISE TO ₹{nextBid}Cr</>
-              ) : me?.squad?.length >= 11 ? (
-                'MAX SQUAD REACHED'
-              ) : (
-                'INSUFFICIENT BUDGET'
-              )}
-            </button>
-            <p style={{ textAlign: 'center', marginTop: 16, fontSize: 13, color: '#4a5568', fontWeight: 600 }}>
-              {canBid ? `Raise by ₹0.5Cr · Remaining Budget: ₹${+(me?.budget - nextBid).toFixed(1)}Cr` : ''}
-            </p>
+            {iAmLeading ? (
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, padding: '22px', borderRadius: 20, background: 'rgba(22,199,132,0.08)', border: '1px solid rgba(22,199,132,0.25)', color: '#16c784', fontWeight: 800, fontSize: 18 }}>
+                <Crown size={24} fill="#16c784" /> You Are Leading — Keep Waiting
+              </div>
+            ) : me?.squad?.length >= 11 ? (
+              <div style={{ textAlign: 'center', padding: '22px', borderRadius: 20, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', color: '#4a5568', fontWeight: 800, fontSize: 16 }}>MAX SQUAD REACHED</div>
+            ) : (
+              <div>
+                <div style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#8892a4', marginBottom: 12, textAlign: 'center' }}>Select Raise Amount</div>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10 }}>
+                  {BID_RAISES.map((raise) => {
+                    const amount = +(room.currentBid + raise).toFixed(1);
+                    const canDo = canBidAmount(raise);
+                    return (
+                      <button
+                        key={raise}
+                        onClick={() => handleBid(raise)}
+                        disabled={!canDo}
+                        style={{
+                          display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+                          padding: '14px 8px', borderRadius: 16, border: canDo ? '1px solid rgba(245,166,35,0.4)' : '1px solid rgba(255,255,255,0.06)',
+                          background: canDo ? 'linear-gradient(135deg, rgba(251,191,36,0.15), rgba(217,119,6,0.08))' : 'rgba(255,255,255,0.03)',
+                          color: canDo ? '#fbbf24' : '#4a5568', cursor: canDo ? 'pointer' : 'not-allowed',
+                          fontFamily: 'Rajdhani, sans-serif', fontWeight: 800, transition: 'all 0.2s',
+                          boxShadow: canDo ? '0 0 20px rgba(245,166,35,0.1)' : 'none',
+                        }}
+                      >
+                        <span style={{ fontSize: 11, color: canDo ? '#8892a4' : '#4a5568', fontFamily: 'Inter', fontWeight: 600, marginBottom: 2 }}>+{raise}Cr</span>
+                        <span style={{ fontSize: 22 }}>₹{amount}</span>
+                        <span style={{ fontSize: 10, color: canDo ? '#8892a4' : '#4a5568', fontFamily: 'Inter', fontWeight: 600, marginTop: 2 }}>Cr</span>
+                      </button>
+                    );
+                  })}
+                </div>
+                <p style={{ textAlign: 'center', marginTop: 12, fontSize: 12, color: '#4a5568', fontWeight: 600 }}>
+                  Budget remaining: ₹{me?.budget?.toFixed(1)}Cr
+                </p>
+              </div>
+            )}
           </div>
         </main>
 
@@ -228,7 +270,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
         <aside className="responsive-padding" style={{ borderLeft: '1px solid rgba(255,255,255,0.06)', padding: 24, overflowY: 'auto', background: 'rgba(8,12,24,0.3)', display: 'flex', flexDirection: 'column', gap: 24 }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
-              <Users size={16} color="#6366f1" />
+              <Users size={16} color="#fbbf24" />
               <h3 style={{ fontSize: 13, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#8892a4' }}>Live Standings</h3>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -240,24 +282,37 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
 
           <div style={{ marginTop: 'auto' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
-              <History size={16} color="#6366f1" />
+              <History size={16} color="#fbbf24" />
               <h3 style={{ fontSize: 13, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#8892a4' }}>Recent Signings</h3>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
               {room.history.length === 0 ? (
                 <div style={{ fontSize: 12, color: '#4a5568', padding: '10px 0' }}>No players sold yet</div>
               ) : (
-                [...room.history].reverse().slice(0, 5).map((h, i) => (
-                  <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 14px', background: 'rgba(255,255,255,0.02)', borderRadius: 12, border: '1px solid rgba(255,255,255,0.05)' }}>
-                    <div style={{ flex: 1, minWidth: 0 }}>
-                      <div style={{ fontSize: 12, fontWeight: 700, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', color: 'white' }}>{h.player.name}</div>
-                      <div style={{ fontSize: 10, color: h.soldTo === 'Unsold' ? '#ef4444' : '#8892a4' }}>{h.soldTo}</div>
+                [...room.history].reverse().slice(0, 6).map((h, i) => {
+                  const unsold = h.soldTo === 'Unsold' || h.soldTo === 'Skipped';
+                  return (
+                    <div key={i} style={{ padding: '10px 12px', background: 'rgba(255,255,255,0.02)', borderRadius: 12, border: `1px solid ${unsold ? 'rgba(239,68,68,0.1)' : 'rgba(255,255,255,0.05)'}` }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 6 }}>
+                        <div style={{ flex: 1, minWidth: 0 }}>
+                          <div style={{ fontSize: 12, fontWeight: 700, color: 'white', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{h.player.name}</div>
+                          <div style={{ fontSize: 10, color: '#4a5568', marginTop: 1 }}>{h.player.role} · {h.player.team}</div>
+                        </div>
+                        <div style={{ textAlign: 'right', flexShrink: 0 }}>
+                          <div style={{ fontSize: 13, fontWeight: 900, color: unsold ? '#ef4444' : '#fbbf24', fontFamily: 'Rajdhani, sans-serif' }}>
+                            {unsold ? 'UNSOLD' : `₹${h.price}Cr`}
+                          </div>
+                        </div>
+                      </div>
+                      {!unsold && (
+                        <div style={{ marginTop: 6, display: 'flex', alignItems: 'center', gap: 5 }}>
+                          <div style={{ width: 4, height: 4, borderRadius: '50%', background: '#16c784' }} />
+                          <span style={{ fontSize: 10, color: '#16c784', fontWeight: 700 }}>{h.soldTo}</span>
+                        </div>
+                      )}
                     </div>
-                    <div style={{ fontSize: 13, fontWeight: 800, color: h.soldTo === 'Unsold' ? '#ef4444' : '#16c784' }}>
-                      {h.soldTo === 'Unsold' ? 'UNSOLD' : `₹${h.price}Cr`}
-                    </div>
-                  </div>
-                ))
+                  );
+                })
               )}
             </div>
           </div>
@@ -282,7 +337,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
               <div style={{ display: 'flex', gap: 8, marginBottom: 24 }}>
                 {['ALL', 'BAT', 'BOWL', 'AR', 'WK'].map(f => (
                   <button key={f} onClick={() => setPlayerFilter(f)}
-                    style={{ padding: '6px 16px', borderRadius: 99, fontWeight: 700, fontSize: 13, border: '1px solid rgba(255,255,255,0.1)', background: playerFilter === f ? '#6366f1' : 'transparent', color: playerFilter === f ? 'white' : '#8892a4', cursor: 'pointer' }}>
+                    style={{ padding: '6px 16px', borderRadius: 99, fontWeight: 700, fontSize: 13, border: `1px solid ${playerFilter === f ? 'rgba(245,166,35,0.4)' : 'rgba(255,255,255,0.1)'}`, background: playerFilter === f ? 'rgba(245,166,35,0.15)' : 'transparent', color: playerFilter === f ? '#fbbf24' : '#8892a4', cursor: 'pointer' }}>
                     {f}
                   </button>
                 ))}
