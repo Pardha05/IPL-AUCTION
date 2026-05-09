@@ -62,16 +62,16 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '8px 16px', background: 'rgba(255,255,255,0.05)', borderRadius: 14, border: '1px solid rgba(255,255,255,0.1)' }}>
-          <div style={{ width: 32, height: 32, borderRadius: 8, background: `linear-gradient(135deg,${myColor[0]},${myColor[1]})`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 900 }}>
+          <div style={{ width: 32, height: 32, borderRadius: 8, background: `linear-gradient(135deg,${myColor[0]},${myColor[1]})`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 900, flexShrink: 0 }}>
             {me?.teamName?.slice(0,2).toUpperCase()}
           </div>
-          <span style={{ fontWeight: 700, fontSize: 15 }}>{me?.teamName}</span>
+          <span style={{ fontWeight: 700, fontSize: 15, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 100 }}>{me?.teamName}</span>
         </div>
 
         <div style={{ flex: 1 }} />
 
         {isAdmin && (
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
             {/* Room Code Badge — share with late joiners */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '6px 14px', background: 'rgba(245,166,35,0.08)', border: '1px solid rgba(245,166,35,0.25)', borderRadius: 10 }}>
               <div style={{ fontSize: 9, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#8892a4' }}>Room</div>
@@ -108,13 +108,13 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
           </div>
         )}
 
-        <div style={{ display: 'flex', gap: 1, background: 'rgba(255,255,255,0.06)', borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.06)' }}>
+        <div style={{ display: 'flex', gap: 1, background: 'rgba(255,255,255,0.06)', borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.06)', width: '100%', maxWidth: '100%', flexWrap: 'wrap', justifyContent: 'center' }}>
           {[
             { label: 'Purse', value: `₹${me?.budget}Cr`, color: '#16c784' },
             { label: 'Squad', value: `${me?.squad?.length}/11`, color: 'white' },
             { label: 'Rating', value: avgRating(me?.squad), color: '#fbbf24' },
           ].map(s => (
-            <div key={s.label} style={{ background: '#080c18', padding: '10px 24px', textAlign: 'center', minWidth: 100 }}>
+            <div key={s.label} style={{ background: '#080c18', padding: '10px 16px', textAlign: 'center', flex: '1 1 30%', minWidth: 80 }}>
               <div style={{ fontSize: 9, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#8892a4', marginBottom: 2 }}>{s.label}</div>
               <div style={{ fontSize: 16, fontWeight: 800, color: s.color }}>{s.value}</div>
             </div>
@@ -190,8 +190,8 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
         </aside>
 
         {/* ── CENTER: Bidding Arena ── */}
-        <main className="responsive-padding" style={{ padding: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 32, overflowY: 'auto' }}>
-          <div style={{ textAlign: 'center' }}>
+        <main className="responsive-padding mobile-center" style={{ padding: '32px 0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 40, width: '100%', overflowX: 'hidden' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
             {room.status === 'paused' ? (
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 20px', background: 'rgba(245,166,35,0.1)', border: '1px solid rgba(245,166,35,0.2)', borderRadius: 99, marginBottom: 24 }}>
                 <Pause size={14} color="#fbbf24" />
@@ -207,9 +207,9 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
             <CircularTimer value={timer} max={15} />
           </div>
 
-          <motion.div animate={bidPulse ? { scale: [1, 1.05, 1] } : {}} className="bid-display" style={{ width: '100%', maxWidth: 540, background: 'rgba(13,18,36,0.6)', padding: '40px', borderRadius: 32 }}>
-            <div style={{ fontSize: 12, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.2em', color: '#8892a4', marginBottom: 12 }}>Current Bid</div>
-            <div className="bid-amount" style={{ fontSize: 84, fontWeight: 800, marginBottom: 16 }}>₹{room.currentBid}<span style={{ fontSize: 32, color: '#4a5568' }}>Cr</span></div>
+          <motion.div animate={bidPulse ? { scale: [1, 1.05, 1] } : {}} className="bid-display" style={{ width: '100%', maxWidth: 540, background: 'rgba(13,18,36,0.6)', padding: '24px 20px', borderRadius: 32 }}>
+            <div style={{ fontSize: 12, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.2em', color: '#8892a4', marginBottom: 8 }}>Current Bid</div>
+            <div className="bid-amount" style={{ fontSize: 64, fontWeight: 800, marginBottom: 12 }}>₹{room.currentBid}<span style={{ fontSize: 24, color: '#4a5568' }}>Cr</span></div>
             
             <div style={{ minHeight: 32 }}>
               {room.currentBidder ? (
@@ -250,7 +250,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
             ) : (
               <div>
                 <div style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#8892a4', marginBottom: 12, textAlign: 'center' }}>Select Raise Amount</div>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10 }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(70px, 1fr))', gap: 10 }}>
                   {BID_RAISES.map((raise) => {
                     const amount = +(room.currentBid + raise).toFixed(1);
                     const canDo = canBidAmount(raise);

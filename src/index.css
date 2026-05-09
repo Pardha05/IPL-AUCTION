@@ -48,15 +48,21 @@
   margin: 0; padding: 0; box-sizing: border-box;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; max-width: 100vw; overflow-x: hidden; }
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background-color: var(--bg-deep);
   color: var(--text);
   min-height: 100vh;
+  max-width: 100vw;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 /* ============================================
@@ -541,6 +547,9 @@ body {
     grid-template-columns: 1fr !important;
     gap: 24px !important;
     overflow-y: auto !important;
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
   }
   
   .responsive-grid aside, .responsive-grid main {
@@ -551,7 +560,9 @@ body {
   }
   
   .responsive-padding {
-    padding: 20px !important;
+    padding: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .mobile-stack {
