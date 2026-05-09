@@ -14,9 +14,25 @@ export default function LobbyScreen({ room, myId, onStart }) {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  // Show loading if room data hasn't arrived yet
+  if (!room?.id || !room?.users) {
+    return (
+      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
+        <div className="stadium-bg" />
+        <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
+          <div style={{ fontSize: 32, marginBottom: 16 }}>⏳</div>
+          <div style={{ fontSize: 18, fontWeight: 700, color: '#fbbf24' }}>Connecting to room…</div>
+          <div style={{ fontSize: 13, color: '#8892a4', marginTop: 8 }}>Please wait</div>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="responsive-padding" style={{ minHeight: '100vh', padding: '32px 24px', maxWidth: 960, margin: '0 auto', position: 'relative', zIndex: 1 }}>
+    <div style={{ minHeight: '100vh', position: 'relative' }}>
       <div className="stadium-bg" />
+      {/* All content must be above the fixed bg */}
+      <div className="responsive-padding" style={{ position: 'relative', zIndex: 2, padding: '32px 24px', maxWidth: 960, margin: '0 auto' }}>
 
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -16 }} animate={{ opacity: 1, y: 0 }}
@@ -116,7 +132,9 @@ export default function LobbyScreen({ room, myId, onStart }) {
             </div>
           ))}
         </div>
+        </div>
       </div>
     </div>
   );
+}
 }

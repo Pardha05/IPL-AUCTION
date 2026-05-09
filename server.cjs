@@ -41,9 +41,8 @@ io.on('connection', (socket) => {
 
   socket.on('join_room', ({ roomId, teamName, playerName }) => {
     const room = rooms.get(roomId);
-    if (!room || room.status !== 'waiting') {
-      return socket.emit('error', 'Room not found or already started.');
-    }
+    if (!room) return socket.emit('error', 'Room not found.');
+    if (room.status === 'finished') return socket.emit('error', 'Auction has already ended.');
     if (room.users.some(u => u.teamName.toLowerCase() === teamName.toLowerCase())) {
       return socket.emit('error', 'That team name is already taken.');
     }

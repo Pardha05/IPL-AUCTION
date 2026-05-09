@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Crown, Wallet, Users, History, ChevronUp, Star, UserCheck, Pause, Play, FastForward, StopCircle, List, X } from 'lucide-react';
+import { Crown, Wallet, Users, History, ChevronUp, Star, UserCheck, Pause, Play, FastForward, StopCircle, List, X, Copy, CheckCircle2 } from 'lucide-react';
 import { RoleBadge, PlayerAvatar, StarRating, CircularTimer, TeamRow, Toast } from './Components.jsx';
 import { ROLE_META, TEAM_COLORS, avgRating } from './data.js';
 
@@ -9,6 +9,13 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
   const [bidPulse, setBidPulse] = useState(false);
   const [showPlayers, setShowPlayers] = useState(false);
   const [playerFilter, setPlayerFilter] = useState('ALL');
+  const [codeCopied, setCodeCopied] = useState(false);
+
+  const copyRoomCode = () => {
+    navigator.clipboard.writeText(room.id);
+    setCodeCopied(true);
+    setTimeout(() => setCodeCopied(false), 2000);
+  };
 
   const player = room.players ? room.players[room.currentPlayerIndex] : null;
   const me = room.users.find(u => u.id === myId);
@@ -45,6 +52,8 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative', color: 'white' }}>
       <div className="stadium-bg" />
+      {/* z-index:2 wrapper ensures all content renders above fixed bg */}
+      <div style={{ position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', flex: 1 }}>
 
       {/* ── TOP NAV ── */}
       <header className="glass mobile-stack" style={{ borderRadius: 0, border: 'none', borderBottom: '1px solid rgba(255,255,255,0.06)', padding: '0 32px', display: 'flex', alignItems: 'center', gap: 24, height: 'auto', minHeight: 72, position: 'relative', zIndex: 100 }}>
@@ -62,7 +71,15 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
         <div style={{ flex: 1 }} />
 
         {isAdmin && (
-          <div style={{ display: 'flex', gap: 8 }}>
+          <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+            {/* Room Code Badge — share with late joiners */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '6px 14px', background: 'rgba(245,166,35,0.08)', border: '1px solid rgba(245,166,35,0.25)', borderRadius: 10 }}>
+              <div style={{ fontSize: 9, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#8892a4' }}>Room</div>
+              <div style={{ fontFamily: 'monospace', fontSize: 16, fontWeight: 900, letterSpacing: '0.15em', color: '#fbbf24' }}>{room.id}</div>
+              <button onClick={copyRoomCode} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '2px', display: 'flex', color: codeCopied ? '#16c784' : '#8892a4' }}>
+                {codeCopied ? <CheckCircle2 size={14} /> : <Copy size={14} />}
+              </button>
+            </div>
             <button 
               onClick={() => room.status === 'paused' ? onResume() : onPause()}
               style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '8px 16px', borderRadius: 8, border: '1px solid rgba(255,255,255,0.1)', background: room.status === 'paused' ? 'rgba(22,199,132,0.1)' : 'rgba(239,68,68,0.1)', color: room.status === 'paused' ? '#16c784' : '#ef4444', fontWeight: 700, cursor: 'pointer' }}
@@ -372,6 +389,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
           </motion.div>
         )}
       </AnimatePresence>
+      </div>{/* end z-index:2 wrapper */}
     </div>
   );
 }

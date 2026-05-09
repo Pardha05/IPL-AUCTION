@@ -18,15 +18,24 @@ export default function App() {
   const [timer, setTimer] = useState(15);
 
   useEffect(() => {
-    socket.on('room_created',   (d) => { setRoom(d); setView('lobby');   });
-    socket.on('room_updated',   (d) => { setRoom(d); });
+    socket.on('room_created',   (d) => { setRoom(d); setView('lobby'); });
+    socket.on('room_updated',   (d) => {
+      setRoom(d);
+      // Route late-joiners: if they joined mid-auction go straight to auction
+      setView((prev) => {
+        if (prev === 'landing' || prev === 'lobby') {
+          return d.status === 'active' ? 'auction' : 'lobby';
+        }
+        return prev;
+      });
+    });
     socket.on('auction_started',(d) => { setRoom(d); setView('auction'); });
     socket.on('timer_tick',     (t) => { setTimer(t); });
     socket.on('bid_updated',    (d) => { setRoom({ ...d }); });
     socket.on('player_sold',    (d) => {
       setRoom({ ...d });
       setTimer(15);
-      confetti({ particleCount: 60, spread: 55, origin: { y: 0.65 }, colors: ['#6366f1','#fbbf24','#16c784'] });
+      confetti({ particleCount: 60, spread: 55, origin: { y: 0.65 }, colors: ['#fbbf24','#16c784','#f87171'] });
     });
     socket.on('auction_paused', (d) => { setRoom({ ...d }); });
     socket.on('auction_resumed',(d) => { setRoom({ ...d }); });
@@ -48,6 +57,7 @@ export default function App() {
 
   const handleJoin = (playerName, teamName, roomId) => {
     socket.emit('join_room', { roomId, playerName, teamName });
+    // Room data + correct view will arrive via room_updated
     // Show lobby immediately; room data will arrive via room_updated
     setRoom((prev) => prev || { id: roomId, users: [], admin: null, history: [] });
     setView('lobby');
