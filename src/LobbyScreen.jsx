@@ -137,4 +137,3 @@ export default function LobbyScreen({ room, myId, onStart }) {
     </div>
   );
 }
-}
