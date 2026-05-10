@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Crown, Users, History, ChevronUp, UserCheck, Pause, Play, FastForward, StopCircle, List, X, Copy, CheckCircle } from 'lucide-react';
+import { Crown, Users, History, ChevronUp, UserCheck, Pause, Play, FastForward, Rewind, StopCircle, List, X, Copy, CheckCircle } from 'lucide-react';
 import { RoleBadge, PlayerAvatar, StarRating, CircularTimer, TeamRow, Toast } from './Components.jsx';
 import { ROLE_META, TEAM_COLORS, avgRating } from './data.js';
 
-export default function AuctionScreen({ room, myId, timer, onBid, onPause, onResume, onSkip, onEnd, onJump }) {
+export default function AuctionScreen({ room, myId, timer, onBid, onPause, onResume, onSkip, onPrevious, onEnd, onJump }) {
   const [toast, setToast] = useState(null);
   const [bidPulse, setBidPulse] = useState(false);
   const [showPlayers, setShowPlayers] = useState(false);
@@ -85,6 +85,13 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
               style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '8px 16px', borderRadius: 8, border: '1px solid rgba(255,255,255,0.1)', background: room.status === 'paused' ? 'rgba(22,199,132,0.1)' : 'rgba(239,68,68,0.1)', color: room.status === 'paused' ? '#16c784' : '#ef4444', fontWeight: 700, cursor: 'pointer' }}
             >
               {room.status === 'paused' ? <><Play size={16} /> Resume</> : <><Pause size={16} /> Pause</>}
+            </button>
+            <button 
+              onClick={onPrevious}
+              disabled={room.status === 'paused' || room.currentPlayerIndex === 0}
+              style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '8px 16px', borderRadius: 8, border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.1)', color: 'white', fontWeight: 700, cursor: (room.status === 'paused' || room.currentPlayerIndex === 0) ? 'not-allowed' : 'pointer', opacity: (room.status === 'paused' || room.currentPlayerIndex === 0) ? 0.5 : 1 }}
+            >
+              <Rewind size={16} /> Prev
             </button>
             <button 
               onClick={onSkip}

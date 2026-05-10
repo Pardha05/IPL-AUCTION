@@ -83,6 +83,10 @@ export default function App() {
     socket.emit('skip_player', room.id);
   };
 
+  const handlePrevious = () => {
+    socket.emit('previous_player', room.id);
+  };
+
   const handleEnd = () => {
     socket.emit('end_auction', room.id);
   };
@@ -105,7 +109,7 @@ export default function App() {
       )}
       {view === 'auction' && room && (
         <motion.div key="auction" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-          <AuctionScreen room={room} myId={socket.id} timer={timer} onBid={handleBid} onPause={handlePause} onResume={handleResume} onSkip={handleSkip} onEnd={handleEnd} onJump={handleJump} />
+          <AuctionScreen room={room} myId={socket.id} timer={timer} onBid={handleBid} onPause={handlePause} onResume={handleResume} onSkip={handleSkip} onPrevious={handlePrevious} onEnd={handleEnd} onJump={handleJump} />
         </motion.div>
       )}
       {view === 'finished' && room && (

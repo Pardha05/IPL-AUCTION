@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'dist')));
-app.get('*', (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 const server = http.createServer(app);
@@ -127,6 +127,34 @@ io.on('connection', (socket) => {
       room.status = 'finished';
       io.to(roomId).emit('auction_finished', room);
     }
+  });
+
+  socket.on('previous_player', (roomId) => {
+    const room = rooms.get(roomId);
+    if (!room || room.admin !== socket.id) return;
+    if (room.status !== 'active' && room.status !== 'paused') return;
+    if (room.currentPlayerIndex === 0) return;
+
+    // Revert the last history entry
+    const lastHistory = room.history.pop();
+    if (lastHistory) {
+      if (lastHistory.soldTo !== 'Skipped' && lastHistory.soldTo !== 'Unsold') {
+        const buyer = room.users.find(u => u.teamName === lastHistory.soldTo);
+        if (buyer) {
+          buyer.budget = +(buyer.budget + lastHistory.price).toFixed(1);
+          buyer.squad = buyer.squad.filter(p => p.id !== lastHistory.player.id);
+        }
+      }
+    }
+
+    room.currentPlayerIndex--;
+    const prev = room.players[room.currentPlayerIndex];
+    room.currentBid = prev.base;
+    room.currentBidder = null;
+    room.bidLog = [];
+    room.timer = 15;
+    
+    io.to(roomId).emit('player_sold', room);
   });
 
   socket.on('end_auction', (roomId) => {
