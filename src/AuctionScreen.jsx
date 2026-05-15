@@ -25,14 +25,14 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
 
   const canBidAmount = (raise) => {
     const amount = +(room.currentBid + raise).toFixed(1);
-    return !iAmLeading && me?.squad?.length < 11 && me?.budget >= amount && room.status === 'active';
+    return !iAmLeading && me?.squad?.length < 15 && me?.budget >= amount && room.status === 'active';
   };
 
   const handleBid = (raise) => {
     const amount = +(room.currentBid + raise).toFixed(1);
     if (!canBidAmount(raise)) {
       if (room.status === 'paused') return showErr('Auction is paused.');
-      if (me?.squad?.length >= 11) return showErr('Squad is full (11/11)');
+      if (me?.squad?.length >= 15) return showErr('Squad is full (15/15)');
       if (me?.budget < amount) return showErr(`Insufficient funds. Need ₹${amount}Cr`);
       return;
     }
@@ -118,7 +118,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
         <div style={{ display: 'flex', gap: 1, background: 'rgba(255,255,255,0.06)', borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.06)', width: '100%', maxWidth: '100%', flexWrap: 'wrap', justifyContent: 'center' }}>
           {[
             { label: 'Purse', value: `₹${me?.budget}Cr`, color: '#16c784' },
-            { label: 'Squad', value: `${me?.squad?.length}/11`, color: 'white' },
+            { label: 'Squad', value: `${me?.squad?.length}/15`, color: 'white' },
             { label: 'Rating', value: avgRating(me?.squad), color: '#fbbf24' },
           ].map(s => (
             <div key={s.label} style={{ background: '#080c18', padding: '10px 16px', textAlign: 'center', flex: '1 1 30%', minWidth: 80 }}>
@@ -149,6 +149,18 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
                 </div>
                 
                 <RoleBadge role={player.role} />
+                {player.tag && (
+                  <span style={{ display: 'inline-block', marginLeft: 8, padding: '2px 10px', borderRadius: 99, fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em',
+                    background: player.tag.includes('Veteran') ? 'rgba(245,166,35,0.15)' : 'rgba(99,102,241,0.15)',
+                    color: player.tag.includes('Veteran') ? '#fbbf24' : '#a78bfa',
+                    border: player.tag.includes('Veteran') ? '1px solid rgba(245,166,35,0.3)' : '1px solid rgba(99,102,241,0.3)' }}>
+                    {player.tag.includes('Veteran') ? '⭐ ' : '🔓 '}{player.tag}
+                  </span>
+                )}
+                {player.hiddenPotential && (
+                  <span style={{ display: 'inline-block', marginLeft: 6, padding: '2px 10px', borderRadius: 99, fontSize: 10, fontWeight: 800,
+                    background: 'rgba(239,68,68,0.12)', color: '#f87171', border: '1px solid rgba(239,68,68,0.25)' }}>🔥 Hidden Potential</span>
+                )}
                 <h2 style={{ fontFamily: 'Rajdhani,sans-serif', fontSize: 32, fontWeight: 700, margin: '12px 0 4px', color: 'white' }}>{player.name}</h2>
                 <div style={{ fontSize: 14, color: '#8892a4', fontWeight: 600, marginBottom: 20 }}>{player.team} · 2024 Season</div>
                 
@@ -169,7 +181,7 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
               <UserCheck size={16} color="#fbbf24" />
-              <h3 style={{ fontSize: 13, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#8892a4' }}>My Squad ({me?.squad?.length}/11)</h3>
+              <h3 style={{ fontSize: 13, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#8892a4' }}>My Squad ({me?.squad?.length}/15)</h3>
             </div>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -252,8 +264,8 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, padding: '22px', borderRadius: 20, background: 'rgba(22,199,132,0.08)', border: '1px solid rgba(22,199,132,0.25)', color: '#16c784', fontWeight: 800, fontSize: 18 }}>
                 <Crown size={24} fill="#16c784" /> You Are Leading — Keep Waiting
               </div>
-            ) : me?.squad?.length >= 11 ? (
-              <div style={{ textAlign: 'center', padding: '22px', borderRadius: 20, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', color: '#4a5568', fontWeight: 800, fontSize: 16 }}>MAX SQUAD REACHED</div>
+            ) : me?.squad?.length >= 15 ? (
+              <div style={{ textAlign: 'center', padding: '22px', borderRadius: 20, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', color: '#4a5568', fontWeight: 800, fontSize: 16 }}>MAX SQUAD REACHED (15/15)</div>
             ) : (
               <div>
                 <div style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#8892a4', marginBottom: 12, textAlign: 'center' }}>Select Raise Amount</div>
@@ -385,6 +397,16 @@ export default function AuctionScreen({ room, myId, timer, onBid, onPause, onRes
                         <RoleBadge role={p.role} size="sm" />
                         <span style={{ fontSize: 12, color: '#16c784', fontWeight: 800 }}>₹{p.base}Cr</span>
                       </div>
+                      {p.tag && (
+                        <div style={{ display: 'flex', gap: 4, marginTop: 6, flexWrap: 'wrap' }}>
+                          <span style={{ fontSize: 9, padding: '2px 7px', borderRadius: 99, fontWeight: 800,
+                            background: p.tag.includes('Veteran') ? 'rgba(245,166,35,0.15)' : 'rgba(99,102,241,0.15)',
+                            color: p.tag.includes('Veteran') ? '#fbbf24' : '#a78bfa' }}>
+                            {p.tag.includes('Veteran') ? '⭐' : '🔓'} {p.tag}
+                          </span>
+                          {p.hiddenPotential && <span style={{ fontSize: 9, padding: '2px 7px', borderRadius: 99, fontWeight: 800, background: 'rgba(239,68,68,0.1)', color: '#f87171' }}>🔥 Potential</span>}
+                        </div>
+                      )}
                       {isSoldOrSkipped && (
                         <div style={{ fontSize: 10, color: '#ef4444', marginTop: 8, fontWeight: 800 }}>UNAVAILABLE</div>
                       )}

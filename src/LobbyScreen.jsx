@@ -118,7 +118,7 @@ export default function LobbyScreen({ room, myId, onStart }) {
           </div>
           {[
             ['💰', 'Starting Purse', '₹150 Crore per team'],
-            ['👥', 'Squad Size', 'Max 11 players'],
+            ['👥', 'Squad Size', 'Max 15 players'],
             ['⏱️', 'Bid Timer', '15 sec, resets on each bid'],
             ['🏆', 'Win Condition', 'Highest average squad rating'],
             ['📈', 'Bid Increment', '+0.5 Cr per raise'],

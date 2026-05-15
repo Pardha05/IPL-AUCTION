@@ -79,7 +79,7 @@ export function Toast({ msg, type = 'error', onClose }) {
 export function TeamRow({ user, rank, isLeading, isBidder, myId }) {
   const color = TEAM_COLORS[(rank) % TEAM_COLORS.length];
   const pts = avgRating(user.squad);
-  const pct = (user.squad.length / 11) * 100;
+  const pct = (user.squad.length / 15) * 100;
   return (
     <div className={`team-row ${isLeading ? 'leading' : ''} ${isBidder ? 'active-bidder' : ''}`} style={{ borderLeftWidth: 4, borderLeftColor: color[0] }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
@@ -99,7 +99,7 @@ export function TeamRow({ user, rank, isLeading, isBidder, myId }) {
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11, marginBottom: 6 }}>
         <span style={{ color: '#8892a4', fontWeight: 600 }}>₹{user.budget} Cr</span>
-        <span style={{ color: '#8892a4', fontWeight: 600 }}>{user.squad.length}/11 players</span>
+        <span style={{ color: '#8892a4', fontWeight: 600 }}>{user.squad.length}/15 players</span>
       </div>
       <div className="progress-bar" style={{ height: 3, background: 'rgba(255,255,255,0.05)' }}><div className="progress-fill" style={{ width: `${pct}%`, background: `linear-gradient(90deg, ${color[0]}, ${color[1]})` }} /></div>
     </div>

@@ -78,7 +78,7 @@ io.on('connection', (socket) => {
     if (!room || room.status !== 'active') return;
     const user = room.users.find(u => u.id === socket.id);
     if (!user) return;
-    if (user.squad.length >= 11) return socket.emit('error', 'Your squad is full (11/11).');
+    if (user.squad.length >= 15) return socket.emit('error', 'Your squad is full (15/15).');
     if (user.budget < bidAmount)  return socket.emit('error', 'Insufficient budget.');
     if (bidAmount <= room.currentBid) return;
     room.currentBid    = +bidAmount.toFixed(1);
