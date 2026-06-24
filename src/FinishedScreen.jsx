@@ -4,7 +4,7 @@ import { Trophy, ChevronDown, ChevronUp, RotateCcw } from 'lucide-react';
 import { TEAM_COLORS, avgRating } from './data.js';
 import { RoleBadge } from './Components.jsx';
 
-export default function FinishedScreen({ room }) {
+export default function FinishedScreen({ room, onRestart }) {
   const [expanded, setExpanded] = useState(null);
 
   const sorted = [...room.users]
@@ -108,7 +108,7 @@ export default function FinishedScreen({ room }) {
         </div>
 
         <div style={{ textAlign: 'center', marginTop: 40 }}>
-          <button className="btn btn-primary btn-lg" style={{ gap: 10 }} onClick={() => window.location.reload()}>
+          <button className="btn btn-primary btn-lg" style={{ gap: 10 }} onClick={() => onRestart ? onRestart() : window.location.reload()}>
             <RotateCcw size={18} /> Play New Season
           </button>
         </div>

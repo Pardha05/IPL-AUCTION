@@ -3,49 +3,85 @@
     "name": "Virat Kohli",
     "role": "BAT",
     "base": 1,
-    "rating": 8.1,
+    "rating": 9.2,
     "team": "UNSOLD",
-    "id": 1
+    "id": 1,
+    "image": "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2024/164.png",
+    "age": 35,
+    "jersey": "18",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Rohit Sharma",
     "role": "BAT",
     "base": 1.5,
-    "rating": 7.6,
+    "rating": 8.7,
     "team": "UNSOLD",
-    "id": 2
+    "id": 2,
+    "image": "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2024/107.png",
+    "age": 37,
+    "jersey": "45",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Shubman Gill",
     "role": "BAT",
     "base": 2,
-    "rating": 8,
+    "rating": 8.8,
     "team": "UNSOLD",
-    "id": 3
+    "id": 3,
+    "image": "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2024/3761.png",
+    "age": 24,
+    "jersey": "77",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "KL Rahul",
     "role": "WK",
     "base": 1,
-    "rating": 9.2,
+    "rating": 8.5,
     "team": "UNSOLD",
-    "id": 4
+    "id": 4,
+    "image": "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2024/1125.png",
+    "age": 32,
+    "jersey": "1",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "David Warner",
     "role": "BAT",
     "base": 0.5,
-    "rating": 8.7,
+    "rating": 8.4,
     "team": "UNSOLD",
-    "id": 5
+    "id": 5,
+    "image": "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2024/170.png",
+    "age": 37,
+    "jersey": "31",
+    "country": "Australia",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
-    "name": "Steve Smith",
-    "role": "BAT",
-    "base": 0.5,
-    "rating": 7.9,
+    "name": "Jasprit Bumrah",
+    "role": "BOWL",
+    "base": 2,
+    "rating": 9.5,
     "team": "UNSOLD",
-    "id": 6
+    "id": 6,
+    "image": "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2024/1124.png",
+    "age": 30,
+    "jersey": "93",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Kane Williamson",
@@ -53,7 +89,12 @@
     "base": 2,
     "rating": 8.5,
     "team": "UNSOLD",
-    "id": 7
+    "id": 7,
+    "age": 33,
+    "jersey": "22",
+    "country": "New Zealand",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Joe Root",
@@ -61,7 +102,12 @@
     "base": 1.5,
     "rating": 8.7,
     "team": "UNSOLD",
-    "id": 8
+    "id": 8,
+    "age": 33,
+    "jersey": "66",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Babar Azam",
@@ -69,7 +115,12 @@
     "base": 0.5,
     "rating": 9.2,
     "team": "UNSOLD",
-    "id": 9
+    "id": 9,
+    "age": 29,
+    "jersey": "56",
+    "country": "Pakistan",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Suryakumar Yadav",
@@ -77,7 +128,12 @@
     "base": 2,
     "rating": 7.6,
     "team": "UNSOLD",
-    "id": 10
+    "id": 10,
+    "age": 33,
+    "jersey": "63",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Ruturaj Gaikwad",
@@ -85,7 +141,12 @@
     "base": 0.5,
     "rating": 8,
     "team": "UNSOLD",
-    "id": 11
+    "id": 11,
+    "age": 27,
+    "jersey": "31",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Yashasvi Jaiswal",
@@ -93,7 +154,12 @@
     "base": 0.5,
     "rating": 8,
     "team": "UNSOLD",
-    "id": 12
+    "id": 12,
+    "age": 22,
+    "jersey": "19",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Devon Conway",
@@ -101,7 +167,12 @@
     "base": 1,
     "rating": 8.3,
     "team": "UNSOLD",
-    "id": 13
+    "id": 13,
+    "age": 32,
+    "jersey": "88",
+    "country": "New Zealand",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Faf du Plessis",
@@ -109,7 +180,12 @@
     "base": 1.5,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 14
+    "id": 14,
+    "age": 39,
+    "jersey": "13",
+    "country": "South Africa",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Shreyas Iyer",
@@ -117,7 +193,12 @@
     "base": 2,
     "rating": 8.1,
     "team": "UNSOLD",
-    "id": 15
+    "id": 15,
+    "age": 29,
+    "jersey": "96",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Ishan Kishan",
@@ -125,7 +206,12 @@
     "base": 0.5,
     "rating": 9,
     "team": "UNSOLD",
-    "id": 16
+    "id": 16,
+    "age": 25,
+    "jersey": "32",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Prithvi Shaw",
@@ -133,7 +219,12 @@
     "base": 1.5,
     "rating": 9.3,
     "team": "UNSOLD",
-    "id": 17
+    "id": 17,
+    "age": 24,
+    "jersey": "100",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Rahul Tripathi",
@@ -141,7 +232,12 @@
     "base": 0.5,
     "rating": 8.1,
     "team": "UNSOLD",
-    "id": 18
+    "id": 18,
+    "age": 33,
+    "jersey": "52",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Tilak Varma",
@@ -149,7 +245,12 @@
     "base": 0.5,
     "rating": 9.3,
     "team": "UNSOLD",
-    "id": 19
+    "id": 19,
+    "age": 21,
+    "jersey": "9",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Aiden Markram",
@@ -157,7 +258,12 @@
     "base": 0.5,
     "rating": 8.3,
     "team": "UNSOLD",
-    "id": 20
+    "id": 20,
+    "age": 29,
+    "jersey": "4",
+    "country": "South Africa",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Harry Brook",
@@ -165,7 +271,12 @@
     "base": 1.5,
     "rating": 8.6,
     "team": "UNSOLD",
-    "id": 21
+    "id": 21,
+    "age": 25,
+    "jersey": "88",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Travis Head",
@@ -173,7 +284,12 @@
     "base": 2,
     "rating": 8.4,
     "team": "UNSOLD",
-    "id": 22
+    "id": 22,
+    "age": 30,
+    "jersey": "62",
+    "country": "Australia",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Dawid Malan",
@@ -181,7 +297,12 @@
     "base": 1.5,
     "rating": 7.8,
     "team": "UNSOLD",
-    "id": 23
+    "id": 23,
+    "age": 36,
+    "jersey": "29",
+    "country": "England",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Glenn Phillips",
@@ -189,7 +310,12 @@
     "base": 1,
     "rating": 7.6,
     "team": "UNSOLD",
-    "id": 24
+    "id": 24,
+    "age": 27,
+    "jersey": "23",
+    "country": "New Zealand",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Nicholas Pooran",
@@ -197,7 +323,12 @@
     "base": 1.5,
     "rating": 8.4,
     "team": "UNSOLD",
-    "id": 25
+    "id": 25,
+    "age": 28,
+    "jersey": "29",
+    "country": "West Indies",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Shimron Hetmyer",
@@ -205,7 +336,12 @@
     "base": 2,
     "rating": 7.6,
     "team": "UNSOLD",
-    "id": 26
+    "id": 26,
+    "age": 27,
+    "jersey": "11",
+    "country": "West Indies",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Liam Livingstone",
@@ -213,7 +349,12 @@
     "base": 0.5,
     "rating": 8.8,
     "team": "UNSOLD",
-    "id": 27
+    "id": 27,
+    "age": 30,
+    "jersey": "2",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Tim David",
@@ -221,7 +362,12 @@
     "base": 0.5,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 28
+    "id": 28,
+    "age": 28,
+    "jersey": "8",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Rinku Singh",
@@ -229,7 +375,12 @@
     "base": 2,
     "rating": 9,
     "team": "UNSOLD",
-    "id": 29
+    "id": 29,
+    "age": 26,
+    "jersey": "35",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Nitish Rana",
@@ -237,7 +388,12 @@
     "base": 1,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 30
+    "id": 30,
+    "age": 30,
+    "jersey": "27",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Manish Pandey",
@@ -245,7 +401,12 @@
     "base": 1.5,
     "rating": 7.8,
     "team": "UNSOLD",
-    "id": 31
+    "id": 31,
+    "age": 34,
+    "jersey": "9",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Ajinkya Rahane",
@@ -253,7 +414,12 @@
     "base": 1,
     "rating": 8.8,
     "team": "UNSOLD",
-    "id": 32
+    "id": 32,
+    "age": 35,
+    "jersey": "27",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Ambati Rayudu",
@@ -261,7 +427,12 @@
     "base": 1,
     "rating": 8.5,
     "team": "UNSOLD",
-    "id": 33
+    "id": 33,
+    "age": 38,
+    "jersey": "9",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Mayank Agarwal",
@@ -269,7 +440,12 @@
     "base": 1.5,
     "rating": 9.3,
     "team": "UNSOLD",
-    "id": 34
+    "id": 34,
+    "age": 33,
+    "jersey": "14",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Devdutt Padikkal",
@@ -277,7 +453,12 @@
     "base": 2,
     "rating": 9.3,
     "team": "UNSOLD",
-    "id": 35
+    "id": 35,
+    "age": 23,
+    "jersey": "37",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Abhishek Sharma",
@@ -285,7 +466,12 @@
     "base": 1.5,
     "rating": 8.2,
     "team": "UNSOLD",
-    "id": 36
+    "id": 36,
+    "age": 23,
+    "jersey": "4",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Rahul Tewatia",
@@ -293,7 +479,12 @@
     "base": 2,
     "rating": 8.2,
     "team": "UNSOLD",
-    "id": 37
+    "id": 37,
+    "age": 30,
+    "jersey": "14",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Sarfaraz Khan",
@@ -301,7 +492,12 @@
     "base": 1.5,
     "rating": 8.3,
     "team": "UNSOLD",
-    "id": 38
+    "id": 38,
+    "age": 26,
+    "jersey": "97",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "KS Bharat",
@@ -309,7 +505,12 @@
     "base": 2,
     "rating": 8.4,
     "team": "UNSOLD",
-    "id": 39
+    "id": 39,
+    "age": 30,
+    "jersey": "14",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Rajat Patidar",
@@ -317,7 +518,12 @@
     "base": 1,
     "rating": 9.4,
     "team": "UNSOLD",
-    "id": 40
+    "id": 40,
+    "age": 30,
+    "jersey": "8",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Anmolpreet Singh",
@@ -325,7 +531,12 @@
     "base": 1,
     "rating": 9.5,
     "team": "UNSOLD",
-    "id": 41
+    "id": 41,
+    "age": 26,
+    "jersey": "28",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Priyam Garg",
@@ -333,7 +544,12 @@
     "base": 2,
     "rating": 8.2,
     "team": "UNSOLD",
-    "id": 42
+    "id": 42,
+    "age": 23,
+    "jersey": "11",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Karun Nair",
@@ -341,7 +557,12 @@
     "base": 1,
     "rating": 8.4,
     "team": "UNSOLD",
-    "id": 43
+    "id": 43,
+    "age": 32,
+    "jersey": "69",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Deepak Hooda",
@@ -349,7 +570,12 @@
     "base": 0.5,
     "rating": 8.2,
     "team": "UNSOLD",
-    "id": 44
+    "id": 44,
+    "age": 29,
+    "jersey": "57",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Wriddhiman Saha",
@@ -357,7 +583,12 @@
     "base": 1,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 45
+    "id": 45,
+    "age": 39,
+    "jersey": "6",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Tom Banton",
@@ -365,7 +596,12 @@
     "base": 1.5,
     "rating": 8.6,
     "team": "UNSOLD",
-    "id": 46
+    "id": 46,
+    "age": 25,
+    "jersey": "18",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Will Jacks",
@@ -373,7 +609,12 @@
     "base": 1.5,
     "rating": 8.5,
     "team": "UNSOLD",
-    "id": 47
+    "id": 47,
+    "age": 25,
+    "jersey": "85",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Ben Duckett",
@@ -381,7 +622,12 @@
     "base": 0.5,
     "rating": 7.7,
     "team": "UNSOLD",
-    "id": 48
+    "id": 48,
+    "age": 29,
+    "jersey": "17",
+    "country": "England",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Alex Hales",
@@ -389,7 +635,12 @@
     "base": 2,
     "rating": 9.3,
     "team": "UNSOLD",
-    "id": 49
+    "id": 49,
+    "age": 35,
+    "jersey": "10",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Jason Roy",
@@ -397,7 +648,12 @@
     "base": 2,
     "rating": 8.6,
     "team": "UNSOLD",
-    "id": 50
+    "id": 50,
+    "age": 33,
+    "jersey": "20",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Jasprit Bumrah",
@@ -405,7 +661,12 @@
     "base": 1,
     "rating": 7.6,
     "team": "UNSOLD",
-    "id": 51
+    "id": 51,
+    "age": 30,
+    "jersey": "93",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Mohammed Shami",
@@ -413,7 +674,12 @@
     "base": 0.5,
     "rating": 8.9,
     "team": "UNSOLD",
-    "id": 52
+    "id": 52,
+    "age": 33,
+    "jersey": "11",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Mohammed Siraj",
@@ -421,7 +687,12 @@
     "base": 1.5,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 53
+    "id": 53,
+    "age": 30,
+    "jersey": "73",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Bhuvneshwar Kumar",
@@ -429,7 +700,12 @@
     "base": 2,
     "rating": 8.9,
     "team": "UNSOLD",
-    "id": 54
+    "id": 54,
+    "age": 34,
+    "jersey": "15",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Deepak Chahar",
@@ -437,7 +713,12 @@
     "base": 1.5,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 55
+    "id": 55,
+    "age": 31,
+    "jersey": "90",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Arshdeep Singh",
@@ -445,7 +726,12 @@
     "base": 2,
     "rating": 9.3,
     "team": "UNSOLD",
-    "id": 56
+    "id": 56,
+    "age": 25,
+    "jersey": "2",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM MEDIUM-FAST"
   },
   {
     "name": "Avesh Khan",
@@ -453,7 +739,12 @@
     "base": 1.5,
     "rating": 8,
     "team": "UNSOLD",
-    "id": 57
+    "id": 57,
+    "age": 27,
+    "jersey": "6",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Umran Malik",
@@ -461,7 +752,12 @@
     "base": 1.5,
     "rating": 8.8,
     "team": "UNSOLD",
-    "id": 58
+    "id": 58,
+    "age": 24,
+    "jersey": "24",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Kuldeep Yadav",
@@ -469,7 +765,12 @@
     "base": 2,
     "rating": 8,
     "team": "UNSOLD",
-    "id": 59
+    "id": 59,
+    "age": 29,
+    "jersey": "23",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM WRIST-SPIN"
   },
   {
     "name": "Yuzvendra Chahal",
@@ -477,7 +778,12 @@
     "base": 0.5,
     "rating": 8.2,
     "team": "UNSOLD",
-    "id": 60
+    "id": 60,
+    "age": 33,
+    "jersey": "3",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Ravi Bishnoi",
@@ -485,7 +791,12 @@
     "base": 0.5,
     "rating": 9.2,
     "team": "UNSOLD",
-    "id": 61
+    "id": 61,
+    "age": 23,
+    "jersey": "56",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Ravichandran Ashwin",
@@ -493,7 +804,12 @@
     "base": 1,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 62
+    "id": 62,
+    "age": 37,
+    "jersey": "99",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Mitchell Starc",
@@ -501,7 +817,12 @@
     "base": 0.5,
     "rating": 8.6,
     "team": "UNSOLD",
-    "id": 63
+    "id": 63,
+    "age": 34,
+    "jersey": "56",
+    "country": "Australia",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST"
   },
   {
     "name": "Pat Cummins",
@@ -509,7 +830,12 @@
     "base": 1,
     "rating": 8.8,
     "team": "UNSOLD",
-    "id": 64
+    "id": 64,
+    "age": 31,
+    "jersey": "30",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Josh Hazlewood",
@@ -517,7 +843,12 @@
     "base": 1.5,
     "rating": 7.7,
     "team": "UNSOLD",
-    "id": 65
+    "id": 65,
+    "age": 33,
+    "jersey": "38",
+    "country": "Australia",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Trent Boult",
@@ -525,7 +856,12 @@
     "base": 0.5,
     "rating": 8.1,
     "team": "UNSOLD",
-    "id": 66
+    "id": 66,
+    "age": 34,
+    "jersey": "18",
+    "country": "New Zealand",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST-MEDIUM"
   },
   {
     "name": "Kagiso Rabada",
@@ -533,7 +869,12 @@
     "base": 1,
     "rating": 7.7,
     "team": "UNSOLD",
-    "id": 67
+    "id": 67,
+    "age": 28,
+    "jersey": "25",
+    "country": "South Africa",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Anrich Nortje",
@@ -541,7 +882,12 @@
     "base": 1,
     "rating": 8.3,
     "team": "UNSOLD",
-    "id": 68
+    "id": 68,
+    "age": 30,
+    "jersey": "20",
+    "country": "South Africa",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Lockie Ferguson",
@@ -549,7 +895,12 @@
     "base": 0.5,
     "rating": 9.2,
     "team": "UNSOLD",
-    "id": 69
+    "id": 69,
+    "age": 32,
+    "jersey": "69",
+    "country": "New Zealand",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Mark Wood",
@@ -557,7 +908,12 @@
     "base": 1.5,
     "rating": 7.6,
     "team": "UNSOLD",
-    "id": 70
+    "id": 70,
+    "age": 34,
+    "jersey": "33",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Adil Rashid",
@@ -565,7 +921,12 @@
     "base": 2,
     "rating": 9,
     "team": "UNSOLD",
-    "id": 71
+    "id": 71,
+    "age": 36,
+    "jersey": "95",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Tabraiz Shamsi",
@@ -573,7 +934,12 @@
     "base": 2,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 72
+    "id": 72,
+    "age": 34,
+    "jersey": "26",
+    "country": "South Africa",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM WRIST-SPIN"
   },
   {
     "name": "Wanindu Hasaranga",
@@ -581,7 +947,12 @@
     "base": 1,
     "rating": 7.8,
     "team": "UNSOLD",
-    "id": 73
+    "id": 73,
+    "age": 26,
+    "jersey": "49",
+    "country": "Sri Lanka",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Mustafizur Rahman",
@@ -589,7 +960,12 @@
     "base": 1.5,
     "rating": 8.2,
     "team": "UNSOLD",
-    "id": 74
+    "id": 74,
+    "age": 28,
+    "jersey": "90",
+    "country": "Bangladesh",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST-MEDIUM"
   },
   {
     "name": "T Natarajan",
@@ -597,7 +973,12 @@
     "base": 0.5,
     "rating": 9.4,
     "team": "UNSOLD",
-    "id": 75
+    "id": 75,
+    "age": 33,
+    "jersey": "44",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM MEDIUM-FAST"
   },
   {
     "name": "Chetan Sakariya",
@@ -605,7 +986,12 @@
     "base": 1.5,
     "rating": 9,
     "team": "UNSOLD",
-    "id": 76
+    "id": 76,
+    "age": 26,
+    "jersey": "55",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM MEDIUM-FAST"
   },
   {
     "name": "Kartik Tyagi",
@@ -613,7 +999,12 @@
     "base": 1,
     "rating": 8.9,
     "team": "UNSOLD",
-    "id": 77
+    "id": 77,
+    "age": 23,
+    "jersey": "9",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Kamlesh Nagarkoti",
@@ -621,7 +1012,12 @@
     "base": 1,
     "rating": 9,
     "team": "UNSOLD",
-    "id": 78
+    "id": 78,
+    "age": 24,
+    "jersey": "5",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Prasidh Krishna",
@@ -629,7 +1025,12 @@
     "base": 0.5,
     "rating": 8.6,
     "team": "UNSOLD",
-    "id": 79
+    "id": 79,
+    "age": 28,
+    "jersey": "24",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Umesh Yadav",
@@ -637,7 +1038,12 @@
     "base": 1,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 80
+    "id": 80,
+    "age": 36,
+    "jersey": "19",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Ishant Sharma",
@@ -645,7 +1051,12 @@
     "base": 1,
     "rating": 7.6,
     "team": "UNSOLD",
-    "id": 81
+    "id": 81,
+    "age": 35,
+    "jersey": "97",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Jaydev Unadkat",
@@ -653,7 +1064,12 @@
     "base": 2,
     "rating": 8.8,
     "team": "UNSOLD",
-    "id": 82
+    "id": 82,
+    "age": 32,
+    "jersey": "77",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM MEDIUM-FAST"
   },
   {
     "name": "Sandeep Sharma",
@@ -661,7 +1077,12 @@
     "base": 1.5,
     "rating": 8.9,
     "team": "UNSOLD",
-    "id": 83
+    "id": 83,
+    "age": 30,
+    "jersey": "27",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Mohsin Khan",
@@ -669,7 +1090,12 @@
     "base": 1,
     "rating": 8.1,
     "team": "UNSOLD",
-    "id": 84
+    "id": 84,
+    "age": 25,
+    "jersey": "47",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM MEDIUM-FAST"
   },
   {
     "name": "Mayank Markande",
@@ -677,7 +1103,12 @@
     "base": 1.5,
     "rating": 8.1,
     "team": "UNSOLD",
-    "id": 85
+    "id": 85,
+    "age": 26,
+    "jersey": "11",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Rahul Chahar",
@@ -685,7 +1116,12 @@
     "base": 2,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 86
+    "id": 86,
+    "age": 24,
+    "jersey": "28",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Murugan Ashwin",
@@ -693,7 +1129,12 @@
     "base": 1.5,
     "rating": 8.8,
     "team": "UNSOLD",
-    "id": 87
+    "id": 87,
+    "age": 33,
+    "jersey": "89",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Noor Ahmad",
@@ -701,7 +1142,12 @@
     "base": 0.5,
     "rating": 9.2,
     "team": "UNSOLD",
-    "id": 88
+    "id": 88,
+    "age": 19,
+    "jersey": "15",
+    "country": "Afghanistan",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM WRIST-SPIN"
   },
   {
     "name": "Naveen-ul-Haq",
@@ -709,7 +1155,12 @@
     "base": 1.5,
     "rating": 8.6,
     "team": "UNSOLD",
-    "id": 89
+    "id": 89,
+    "age": 24,
+    "jersey": "78",
+    "country": "Afghanistan",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Alzarri Joseph",
@@ -717,7 +1168,12 @@
     "base": 1,
     "rating": 8.8,
     "team": "UNSOLD",
-    "id": 90
+    "id": 90,
+    "age": 27,
+    "jersey": "8",
+    "country": "West Indies",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Jason Behrendorff",
@@ -725,7 +1181,12 @@
     "base": 2,
     "rating": 7.5,
     "team": "UNSOLD",
-    "id": 91
+    "id": 91,
+    "age": 33,
+    "jersey": "65",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST-MEDIUM"
   },
   {
     "name": "Reece Topley",
@@ -733,7 +1194,12 @@
     "base": 2,
     "rating": 8.5,
     "team": "UNSOLD",
-    "id": 92
+    "id": 92,
+    "age": 30,
+    "jersey": "38",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST-MEDIUM"
   },
   {
     "name": "Chris Woakes",
@@ -741,7 +1207,12 @@
     "base": 1,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 93
+    "id": 93,
+    "age": 35,
+    "jersey": "19",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "David Willey",
@@ -749,7 +1220,12 @@
     "base": 2,
     "rating": 9.5,
     "team": "UNSOLD",
-    "id": 94
+    "id": 94,
+    "age": 34,
+    "jersey": "15",
+    "country": "England",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST-MEDIUM"
   },
   {
     "name": "Luke Wood",
@@ -757,7 +1233,12 @@
     "base": 1.5,
     "rating": 8.9,
     "team": "UNSOLD",
-    "id": 95
+    "id": 95,
+    "age": 28,
+    "jersey": "77",
+    "country": "England",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST-MEDIUM"
   },
   {
     "name": "Dushmantha Chameera",
@@ -765,7 +1246,12 @@
     "base": 0.5,
     "rating": 7.7,
     "team": "UNSOLD",
-    "id": 96
+    "id": 96,
+    "age": 32,
+    "jersey": "5",
+    "country": "Sri Lanka",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Lahiru Kumara",
@@ -773,7 +1259,12 @@
     "base": 1,
     "rating": 8,
     "team": "UNSOLD",
-    "id": 97
+    "id": 97,
+    "age": 27,
+    "jersey": "8",
+    "country": "Sri Lanka",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Blessing Muzarabani",
@@ -781,7 +1272,12 @@
     "base": 1.5,
     "rating": 8.6,
     "team": "UNSOLD",
-    "id": 98
+    "id": 98,
+    "age": 27,
+    "jersey": "40",
+    "country": "Zimbabwe",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Obed McCoy",
@@ -789,7 +1285,12 @@
     "base": 1.5,
     "rating": 9.2,
     "team": "UNSOLD",
-    "id": 99
+    "id": 99,
+    "age": 27,
+    "jersey": "61",
+    "country": "West Indies",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST-MEDIUM"
   },
   {
     "name": "Richard Gleeson",
@@ -797,7 +1298,12 @@
     "base": 0.5,
     "rating": 8.8,
     "team": "UNSOLD",
-    "id": 100
+    "id": 100,
+    "age": 36,
+    "jersey": "7",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Hardik Pandya",
@@ -805,7 +1311,12 @@
     "base": 0.5,
     "rating": 8.9,
     "team": "UNSOLD",
-    "id": 101
+    "id": 101,
+    "age": 30,
+    "jersey": "33",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Ravindra Jadeja",
@@ -813,7 +1324,12 @@
     "base": 1.5,
     "rating": 8.4,
     "team": "UNSOLD",
-    "id": 102
+    "id": 102,
+    "age": 35,
+    "jersey": "8",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Axar Patel",
@@ -821,7 +1337,12 @@
     "base": 0.5,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 103
+    "id": 103,
+    "age": 30,
+    "jersey": "20",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Washington Sundar",
@@ -829,7 +1350,12 @@
     "base": 2,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 104
+    "id": 104,
+    "age": 24,
+    "jersey": "5",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Shivam Dube",
@@ -837,7 +1363,12 @@
     "base": 2,
     "rating": 8.5,
     "team": "UNSOLD",
-    "id": 105
+    "id": 105,
+    "age": 30,
+    "jersey": "25",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Venkatesh Iyer",
@@ -845,7 +1376,12 @@
     "base": 1.5,
     "rating": 8.8,
     "team": "UNSOLD",
-    "id": 106
+    "id": 106,
+    "age": 29,
+    "jersey": "25",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Krunal Pandya",
@@ -853,7 +1389,12 @@
     "base": 2,
     "rating": 7.6,
     "team": "UNSOLD",
-    "id": 107
+    "id": 107,
+    "age": 33,
+    "jersey": "24",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Shardul Thakur",
@@ -861,7 +1402,12 @@
     "base": 2,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 108
+    "id": 108,
+    "age": 32,
+    "jersey": "54",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Ben Stokes",
@@ -869,7 +1415,12 @@
     "base": 0.5,
     "rating": 9.5,
     "team": "UNSOLD",
-    "id": 109
+    "id": 109,
+    "age": 32,
+    "jersey": "55",
+    "country": "England",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Sam Curran",
@@ -877,7 +1428,12 @@
     "base": 0.5,
     "rating": 8.1,
     "team": "UNSOLD",
-    "id": 110
+    "id": 110,
+    "age": 25,
+    "jersey": "58",
+    "country": "England",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM MEDIUM-FAST"
   },
   {
     "name": "Cameron Green",
@@ -885,7 +1441,12 @@
     "base": 0.5,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 111
+    "id": 111,
+    "age": 24,
+    "jersey": "42",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Glenn Maxwell",
@@ -893,7 +1454,12 @@
     "base": 1.5,
     "rating": 7.6,
     "team": "UNSOLD",
-    "id": 112
+    "id": 112,
+    "age": 35,
+    "jersey": "32",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Marcus Stoinis",
@@ -901,7 +1467,12 @@
     "base": 1.5,
     "rating": 8.9,
     "team": "UNSOLD",
-    "id": 113
+    "id": 113,
+    "age": 34,
+    "jersey": "17",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Moeen Ali",
@@ -909,7 +1480,12 @@
     "base": 1,
     "rating": 7.6,
     "team": "UNSOLD",
-    "id": 114
+    "id": 114,
+    "age": 36,
+    "jersey": "18",
+    "country": "England",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Andre Russell",
@@ -917,7 +1493,12 @@
     "base": 2,
     "rating": 8.3,
     "team": "UNSOLD",
-    "id": 115
+    "id": 115,
+    "age": 36,
+    "jersey": "12",
+    "country": "West Indies",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Jason Holder",
@@ -925,7 +1506,12 @@
     "base": 2,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 116
+    "id": 116,
+    "age": 32,
+    "jersey": "98",
+    "country": "West Indies",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Mitchell Marsh",
@@ -933,7 +1519,12 @@
     "base": 0.5,
     "rating": 9.2,
     "team": "UNSOLD",
-    "id": 117
+    "id": 117,
+    "age": 32,
+    "jersey": "8",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Chris Jordan",
@@ -941,7 +1532,12 @@
     "base": 0.5,
     "rating": 8.1,
     "team": "UNSOLD",
-    "id": 118
+    "id": 118,
+    "age": 35,
+    "jersey": "34",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Daniel Sams",
@@ -949,7 +1545,12 @@
     "base": 0.5,
     "rating": 8.5,
     "team": "UNSOLD",
-    "id": 119
+    "id": 119,
+    "age": 31,
+    "jersey": "60",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST-MEDIUM"
   },
   {
     "name": "Odean Smith",
@@ -957,7 +1558,12 @@
     "base": 0.5,
     "rating": 8.8,
     "team": "UNSOLD",
-    "id": 120
+    "id": 120,
+    "age": 27,
+    "jersey": "58",
+    "country": "West Indies",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Romario Shepherd",
@@ -965,7 +1571,12 @@
     "base": 0.5,
     "rating": 8.4,
     "team": "UNSOLD",
-    "id": 121
+    "id": 121,
+    "age": 29,
+    "jersey": "16",
+    "country": "West Indies",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Dwayne Bravo",
@@ -973,7 +1584,12 @@
     "base": 2,
     "rating": 8.5,
     "team": "UNSOLD",
-    "id": 122
+    "id": 122,
+    "age": 40,
+    "jersey": "47",
+    "country": "West Indies",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Shahbaz Ahmed",
@@ -981,7 +1597,12 @@
     "base": 1.5,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 123
+    "id": 123,
+    "age": 29,
+    "jersey": "21",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Vijay Shankar",
@@ -989,7 +1610,12 @@
     "base": 2,
     "rating": 7.8,
     "team": "UNSOLD",
-    "id": 124
+    "id": 124,
+    "age": 33,
+    "jersey": "5",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Nitish Kumar Reddy",
@@ -997,7 +1623,12 @@
     "base": 2,
     "rating": 8.5,
     "team": "UNSOLD",
-    "id": 125
+    "id": 125,
+    "age": 21,
+    "jersey": "14",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Rishi Dhawan",
@@ -1005,7 +1636,12 @@
     "base": 1,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 126
+    "id": 126,
+    "age": 34,
+    "jersey": "19",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Harshal Patel",
@@ -1013,7 +1649,12 @@
     "base": 1,
     "rating": 8.6,
     "team": "UNSOLD",
-    "id": 127
+    "id": 127,
+    "age": 33,
+    "jersey": "24",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Sikandar Raza",
@@ -1021,7 +1662,12 @@
     "base": 1.5,
     "rating": 8.4,
     "team": "UNSOLD",
-    "id": 128
+    "id": 128,
+    "age": 38,
+    "jersey": "24",
+    "country": "Zimbabwe",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Dasun Shanaka",
@@ -1029,7 +1675,12 @@
     "base": 1.5,
     "rating": 9.3,
     "team": "UNSOLD",
-    "id": 129
+    "id": 129,
+    "age": 32,
+    "jersey": "7",
+    "country": "Sri Lanka",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Mohammad Nabi",
@@ -1037,7 +1688,12 @@
     "base": 1.5,
     "rating": 8.1,
     "team": "UNSOLD",
-    "id": 130
+    "id": 130,
+    "age": 39,
+    "jersey": "7",
+    "country": "Afghanistan",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Shakib Al Hasan",
@@ -1045,7 +1701,12 @@
     "base": 0.5,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 131
+    "id": 131,
+    "age": 37,
+    "jersey": "75",
+    "country": "Bangladesh",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Colin Munro",
@@ -1053,7 +1714,12 @@
     "base": 1,
     "rating": 8.8,
     "team": "UNSOLD",
-    "id": 132
+    "id": 132,
+    "age": 37,
+    "jersey": "82",
+    "country": "New Zealand",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Jimmy Neesham",
@@ -1061,7 +1727,12 @@
     "base": 1,
     "rating": 8.2,
     "team": "UNSOLD",
-    "id": 133
+    "id": 133,
+    "age": 33,
+    "jersey": "50",
+    "country": "New Zealand",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Carlos Brathwaite",
@@ -1069,7 +1740,12 @@
     "base": 0.5,
     "rating": 7.7,
     "team": "UNSOLD",
-    "id": 134
+    "id": 134,
+    "age": 35,
+    "jersey": "26",
+    "country": "West Indies",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Roston Chase",
@@ -1077,7 +1753,12 @@
     "base": 0.5,
     "rating": 8.7,
     "team": "UNSOLD",
-    "id": 135
+    "id": 135,
+    "age": 32,
+    "jersey": "10",
+    "country": "West Indies",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Fabian Allen",
@@ -1085,7 +1766,12 @@
     "base": 1.5,
     "rating": 7.7,
     "team": "UNSOLD",
-    "id": 136
+    "id": 136,
+    "age": 29,
+    "jersey": "97",
+    "country": "West Indies",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Mitchell Santner",
@@ -1093,7 +1779,12 @@
     "base": 0.5,
     "rating": 8.9,
     "team": "UNSOLD",
-    "id": 137
+    "id": 137,
+    "age": 32,
+    "jersey": "74",
+    "country": "New Zealand",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Ashton Agar",
@@ -1101,7 +1792,12 @@
     "base": 0.5,
     "rating": 9,
     "team": "UNSOLD",
-    "id": 138
+    "id": 138,
+    "age": 30,
+    "jersey": "46",
+    "country": "Australia",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Sean Abbott",
@@ -1109,7 +1805,12 @@
     "base": 2,
     "rating": 9.4,
     "team": "UNSOLD",
-    "id": 139
+    "id": 139,
+    "age": 32,
+    "jersey": "77",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Michael Bracewell",
@@ -1117,7 +1818,12 @@
     "base": 1.5,
     "rating": 8.4,
     "team": "UNSOLD",
-    "id": 140
+    "id": 140,
+    "age": 33,
+    "jersey": "4",
+    "country": "New Zealand",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Aaron Hardie",
@@ -1125,7 +1831,12 @@
     "base": 1.5,
     "rating": 7.7,
     "team": "UNSOLD",
-    "id": 141
+    "id": 141,
+    "age": 25,
+    "jersey": "20",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Marco Jansen",
@@ -1133,7 +1844,12 @@
     "base": 0.5,
     "rating": 8.9,
     "team": "UNSOLD",
-    "id": 142
+    "id": 142,
+    "age": 24,
+    "jersey": "70",
+    "country": "South Africa",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST"
   },
   {
     "name": "Azmatullah Omarzai",
@@ -1141,7 +1857,12 @@
     "base": 2,
     "rating": 9.2,
     "team": "UNSOLD",
-    "id": 143
+    "id": 143,
+    "age": 24,
+    "jersey": "9",
+    "country": "Afghanistan",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Gulbadin Naib",
@@ -1149,7 +1870,12 @@
     "base": 1.5,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 144
+    "id": 144,
+    "age": 33,
+    "jersey": "14",
+    "country": "Afghanistan",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Sanju Samson",
@@ -1157,15 +1883,25 @@
     "base": 2,
     "rating": 8.8,
     "team": "UNSOLD",
-    "id": 145
+    "id": 145,
+    "age": 29,
+    "jersey": "11",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Jos Buttler",
     "role": "WK",
     "base": 2,
-    "rating": 9.0,
+    "rating": 9,
     "team": "UNSOLD",
-    "id": 146
+    "id": 146,
+    "age": 33,
+    "jersey": "63",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Quinton de Kock",
@@ -1173,7 +1909,12 @@
     "base": 1.5,
     "rating": 8.7,
     "team": "UNSOLD",
-    "id": 147
+    "id": 147,
+    "age": 31,
+    "jersey": "12",
+    "country": "South Africa",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Jonny Bairstow",
@@ -1181,7 +1922,12 @@
     "base": 1.5,
     "rating": 8.6,
     "team": "UNSOLD",
-    "id": 148
+    "id": 148,
+    "age": 34,
+    "jersey": "51",
+    "country": "England",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Matthew Wade",
@@ -1189,7 +1935,12 @@
     "base": 1,
     "rating": 8.1,
     "team": "UNSOLD",
-    "id": 149
+    "id": 149,
+    "age": 36,
+    "jersey": "13",
+    "country": "Australia",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Dinesh Karthik",
@@ -1197,7 +1948,12 @@
     "base": 1,
     "rating": 8.5,
     "team": "UNSOLD",
-    "id": 150
+    "id": 150,
+    "age": 38,
+    "jersey": "19",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Cheteshwar Pujara",
@@ -1205,7 +1961,12 @@
     "base": 0.5,
     "rating": 7.8,
     "team": "UNSOLD",
-    "id": 151
+    "id": 151,
+    "age": 36,
+    "jersey": "25",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Hanuma Vihari",
@@ -1213,7 +1974,12 @@
     "base": 0.5,
     "rating": 7.6,
     "team": "UNSOLD",
-    "id": 152
+    "id": 152,
+    "age": 30,
+    "jersey": "44",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Rassie van der Dussen",
@@ -1221,7 +1987,12 @@
     "base": 1,
     "rating": 8.3,
     "team": "UNSOLD",
-    "id": 153
+    "id": 153,
+    "age": 35,
+    "jersey": "72",
+    "country": "South Africa",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Paul Stirling",
@@ -1229,7 +2000,12 @@
     "base": 0.5,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 154
+    "id": 154,
+    "age": 33,
+    "jersey": "1",
+    "country": "Ireland",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Finn Allen",
@@ -1237,7 +2013,12 @@
     "base": 0.5,
     "rating": 8.2,
     "team": "UNSOLD",
-    "id": 155
+    "id": 155,
+    "age": 25,
+    "jersey": "16",
+    "country": "New Zealand",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Brandon King",
@@ -1245,15 +2026,25 @@
     "base": 0.5,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 156
+    "id": 156,
+    "age": 29,
+    "jersey": "53",
+    "country": "West Indies",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Evin Lewis",
     "role": "BAT",
     "base": 1,
-    "rating": 8.0,
+    "rating": 8,
     "team": "UNSOLD",
-    "id": 157
+    "id": 157,
+    "age": 32,
+    "jersey": "17",
+    "country": "West Indies",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Pathum Nissanka",
@@ -1261,15 +2052,25 @@
     "base": 0.5,
     "rating": 7.8,
     "team": "UNSOLD",
-    "id": 158
+    "id": 158,
+    "age": 26,
+    "jersey": "18",
+    "country": "Sri Lanka",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Litton Das",
     "role": "WK",
     "base": 0.5,
-    "rating": 8.0,
+    "rating": 8,
     "team": "UNSOLD",
-    "id": 159
+    "id": 159,
+    "age": 29,
+    "jersey": "16",
+    "country": "Bangladesh",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Ibrahim Zadran",
@@ -1277,7 +2078,12 @@
     "base": 0.5,
     "rating": 7.7,
     "team": "UNSOLD",
-    "id": 160
+    "id": 160,
+    "age": 22,
+    "jersey": "18",
+    "country": "Afghanistan",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Shaheen Afridi",
@@ -1285,7 +2091,12 @@
     "base": 2,
     "rating": 9.1,
     "team": "UNSOLD",
-    "id": 161
+    "id": 161,
+    "age": 24,
+    "jersey": "10",
+    "country": "Pakistan",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST"
   },
   {
     "name": "Haris Rauf",
@@ -1293,7 +2104,12 @@
     "base": 1.5,
     "rating": 8.7,
     "team": "UNSOLD",
-    "id": 162
+    "id": 162,
+    "age": 30,
+    "jersey": "97",
+    "country": "Pakistan",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Naseem Shah",
@@ -1301,7 +2117,12 @@
     "base": 1,
     "rating": 8.5,
     "team": "UNSOLD",
-    "id": 163
+    "id": 163,
+    "age": 21,
+    "jersey": "71",
+    "country": "Pakistan",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Mohammad Wasim Jr",
@@ -1309,7 +2130,12 @@
     "base": 1,
     "rating": 8.3,
     "team": "UNSOLD",
-    "id": 164
+    "id": 164,
+    "age": 22,
+    "jersey": "74",
+    "country": "Pakistan",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Matt Henry",
@@ -1317,15 +2143,25 @@
     "base": 1,
     "rating": 8.2,
     "team": "UNSOLD",
-    "id": 165
+    "id": 165,
+    "age": 32,
+    "jersey": "21",
+    "country": "New Zealand",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Tim Southee",
     "role": "BOWL",
     "base": 1,
-    "rating": 8.0,
+    "rating": 8,
     "team": "UNSOLD",
-    "id": 166
+    "id": 166,
+    "age": 35,
+    "jersey": "38",
+    "country": "New Zealand",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Neil Wagner",
@@ -1333,7 +2169,12 @@
     "base": 0.5,
     "rating": 7.8,
     "team": "UNSOLD",
-    "id": 167
+    "id": 167,
+    "age": 38,
+    "jersey": "10",
+    "country": "New Zealand",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM MEDIUM-FAST"
   },
   {
     "name": "Kyle Jamieson",
@@ -1341,15 +2182,25 @@
     "base": 1,
     "rating": 8.4,
     "team": "UNSOLD",
-    "id": 168
+    "id": 168,
+    "age": 29,
+    "jersey": "12",
+    "country": "New Zealand",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Josh Little",
     "role": "BOWL",
     "base": 0.5,
-    "rating": 8.0,
+    "rating": 8,
     "team": "UNSOLD",
-    "id": 169
+    "id": 169,
+    "age": 24,
+    "jersey": "82",
+    "country": "Ireland",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST-MEDIUM"
   },
   {
     "name": "George Garton",
@@ -1357,7 +2208,12 @@
     "base": 0.5,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 170
+    "id": 170,
+    "age": 27,
+    "jersey": "57",
+    "country": "England",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM FAST"
   },
   {
     "name": "Andrew Tye",
@@ -1365,7 +2221,12 @@
     "base": 0.5,
     "rating": 7.7,
     "team": "UNSOLD",
-    "id": 171
+    "id": 171,
+    "age": 37,
+    "jersey": "68",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Nathan Ellis",
@@ -1373,15 +2234,25 @@
     "base": 0.5,
     "rating": 7.8,
     "team": "UNSOLD",
-    "id": 172
+    "id": 172,
+    "age": 29,
+    "jersey": "12",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Scott Boland",
     "role": "BOWL",
     "base": 0.5,
-    "rating": 8.0,
+    "rating": 8,
     "team": "UNSOLD",
-    "id": 173
+    "id": 173,
+    "age": 35,
+    "jersey": "19",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Taskin Ahmed",
@@ -1389,7 +2260,12 @@
     "base": 0.5,
     "rating": 8.1,
     "team": "UNSOLD",
-    "id": 174
+    "id": 174,
+    "age": 29,
+    "jersey": "3",
+    "country": "Bangladesh",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Hasan Mahmud",
@@ -1397,7 +2273,12 @@
     "base": 0.5,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 175
+    "id": 175,
+    "age": 24,
+    "jersey": "91",
+    "country": "Bangladesh",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Shoriful Islam",
@@ -1405,7 +2286,12 @@
     "base": 0.5,
     "rating": 7.7,
     "team": "UNSOLD",
-    "id": 176
+    "id": 176,
+    "age": 22,
+    "jersey": "47",
+    "country": "Bangladesh",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM MEDIUM-FAST"
   },
   {
     "name": "Daryl Mitchell",
@@ -1413,7 +2299,12 @@
     "base": 1,
     "rating": 8.4,
     "team": "UNSOLD",
-    "id": 177
+    "id": 177,
+    "age": 33,
+    "jersey": "73",
+    "country": "New Zealand",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Ben Cutting",
@@ -1421,7 +2312,12 @@
     "base": 0.5,
     "rating": 7.8,
     "team": "UNSOLD",
-    "id": 178
+    "id": 178,
+    "age": 37,
+    "jersey": "31",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Dan Christian",
@@ -1429,7 +2325,12 @@
     "base": 0.5,
     "rating": 7.7,
     "team": "UNSOLD",
-    "id": 179
+    "id": 179,
+    "age": 41,
+    "jersey": "54",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Chris Green",
@@ -1437,7 +2338,12 @@
     "base": 0.5,
     "rating": 7.6,
     "team": "UNSOLD",
-    "id": 180
+    "id": 180,
+    "age": 30,
+    "jersey": "93",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Colin de Grandhomme",
@@ -1445,7 +2351,12 @@
     "base": 0.5,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 181
+    "id": 181,
+    "age": 37,
+    "jersey": "77",
+    "country": "New Zealand",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Moises Henriques",
@@ -1453,7 +2364,12 @@
     "base": 0.5,
     "rating": 7.8,
     "team": "UNSOLD",
-    "id": 182
+    "id": 182,
+    "age": 37,
+    "jersey": "21",
+    "country": "Australia",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST-MEDIUM"
   },
   {
     "name": "Mohammad Nawaz",
@@ -1461,15 +2377,25 @@
     "base": 0.5,
     "rating": 8.1,
     "team": "UNSOLD",
-    "id": 183
+    "id": 183,
+    "age": 30,
+    "jersey": "21",
+    "country": "Pakistan",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Faheem Ashraf",
     "role": "AR",
     "base": 0.5,
-    "rating": 8.0,
+    "rating": 8,
     "team": "UNSOLD",
-    "id": 184
+    "id": 184,
+    "age": 30,
+    "jersey": "41",
+    "country": "Pakistan",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Shadab Khan",
@@ -1477,15 +2403,25 @@
     "base": 1,
     "rating": 8.6,
     "team": "UNSOLD",
-    "id": 185
+    "id": 185,
+    "age": 25,
+    "jersey": "7",
+    "country": "Pakistan",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM LEGBREAK"
   },
   {
     "name": "Imad Wasim",
     "role": "AR",
     "base": 0.5,
-    "rating": 8.0,
+    "rating": 8,
     "team": "UNSOLD",
-    "id": 186
+    "id": 186,
+    "age": 35,
+    "jersey": "9",
+    "country": "Pakistan",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Mahmudullah",
@@ -1493,7 +2429,12 @@
     "base": 0.5,
     "rating": 7.9,
     "team": "UNSOLD",
-    "id": 187
+    "id": 187,
+    "age": 38,
+    "jersey": "30",
+    "country": "Bangladesh",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Akeal Hosein",
@@ -1501,7 +2442,12 @@
     "base": 0.5,
     "rating": 7.7,
     "team": "UNSOLD",
-    "id": 188
+    "id": 188,
+    "age": 31,
+    "jersey": "7",
+    "country": "West Indies",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "MS Dhoni",
@@ -1512,7 +2458,12 @@
     "id": 189,
     "tag": "Uncapped (Veteran)",
     "hiddenPotential": true,
-    "bonusRating": 1.5
+    "bonusRating": 1.5,
+    "age": 42,
+    "jersey": "7",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Vaibhav Sooryavanshi",
@@ -1523,7 +2474,12 @@
     "id": 190,
     "tag": "Uncapped",
     "hiddenPotential": true,
-    "bonusRating": 1.0
+    "bonusRating": 1,
+    "age": 13,
+    "jersey": 30,
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Priyansh Arya",
@@ -1534,7 +2490,12 @@
     "id": 191,
     "tag": "Uncapped",
     "hiddenPotential": false,
-    "bonusRating": 0.5
+    "bonusRating": 0.5,
+    "age": 23,
+    "jersey": 43,
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Sameer Rizvi",
@@ -1545,7 +2506,12 @@
     "id": 192,
     "tag": "Uncapped",
     "hiddenPotential": true,
-    "bonusRating": 0.8
+    "bonusRating": 0.8,
+    "age": 20,
+    "jersey": "1",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Abishek Porel",
@@ -1556,7 +2522,12 @@
     "id": 193,
     "tag": "Uncapped",
     "hiddenPotential": false,
-    "bonusRating": 0.5
+    "bonusRating": 0.5,
+    "age": 21,
+    "jersey": "3",
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Tejasvi Dahiya",
@@ -1567,18 +2538,28 @@
     "id": 194,
     "tag": "Uncapped",
     "hiddenPotential": false,
-    "bonusRating": 0.3
+    "bonusRating": 0.3,
+    "age": 22,
+    "jersey": 85,
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Prashant Veer",
     "role": "BAT",
     "base": 0.5,
-    "rating": 7.0,
+    "rating": 7,
     "team": "UNSOLD",
     "id": 195,
     "tag": "Uncapped",
     "hiddenPotential": false,
-    "bonusRating": 0.4
+    "bonusRating": 0.4,
+    "age": 23,
+    "jersey": 95,
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Kartik Sharma",
@@ -1589,7 +2570,12 @@
     "id": 196,
     "tag": "Uncapped",
     "hiddenPotential": false,
-    "bonusRating": 0.4
+    "bonusRating": 0.4,
+    "age": 23,
+    "jersey": 50,
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Mukul Choudhary",
@@ -1600,18 +2586,28 @@
     "id": 197,
     "tag": "Uncapped",
     "hiddenPotential": true,
-    "bonusRating": 0.9
+    "bonusRating": 0.9,
+    "age": 20,
+    "jersey": 87,
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Akshat Raghuwanshi",
     "role": "BAT",
     "base": 0.5,
-    "rating": 7.0,
+    "rating": 7,
     "team": "UNSOLD",
     "id": 198,
     "tag": "Uncapped",
     "hiddenPotential": false,
-    "bonusRating": 0.3
+    "bonusRating": 0.3,
+    "age": 20,
+    "jersey": 50,
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Salil Arora",
@@ -1622,7 +2618,12 @@
     "id": 199,
     "tag": "Uncapped",
     "hiddenPotential": false,
-    "bonusRating": 0.2
+    "bonusRating": 0.2,
+    "age": 24,
+    "jersey": 38,
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "-"
   },
   {
     "name": "Swastik Chikara",
@@ -1633,7 +2634,12 @@
     "id": 200,
     "tag": "Uncapped",
     "hiddenPotential": true,
-    "bonusRating": 0.7
+    "bonusRating": 0.7,
+    "age": 19,
+    "jersey": 38,
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   },
   {
     "name": "Auqib Nabi",
@@ -1644,7 +2650,12 @@
     "id": 201,
     "tag": "Uncapped",
     "hiddenPotential": false,
-    "bonusRating": 0.4
+    "bonusRating": 0.4,
+    "age": 27,
+    "jersey": 67,
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Naman Tiwari",
@@ -1655,7 +2666,12 @@
     "id": 202,
     "tag": "Uncapped",
     "hiddenPotential": true,
-    "bonusRating": 0.8
+    "bonusRating": 0.8,
+    "age": 18,
+    "jersey": 23,
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "LEFT-ARM MEDIUM-FAST"
   },
   {
     "name": "Anshul Kamboj",
@@ -1666,7 +2682,12 @@
     "id": 203,
     "tag": "Uncapped",
     "hiddenPotential": false,
-    "bonusRating": 0.5
+    "bonusRating": 0.5,
+    "age": 23,
+    "jersey": 59,
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Harshit Rana",
@@ -1677,7 +2698,12 @@
     "id": 204,
     "tag": "Uncapped",
     "hiddenPotential": true,
-    "bonusRating": 1.0
+    "bonusRating": 1,
+    "age": 22,
+    "jersey": "22",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM FAST"
   },
   {
     "name": "Mangesh Yadav",
@@ -1688,7 +2714,12 @@
     "id": 205,
     "tag": "Uncapped",
     "hiddenPotential": false,
-    "bonusRating": 0.4
+    "bonusRating": 0.4,
+    "age": 25,
+    "jersey": 15,
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM"
   },
   {
     "name": "Manav Suthar",
@@ -1699,7 +2730,12 @@
     "id": 206,
     "tag": "Uncapped",
     "hiddenPotential": true,
-    "bonusRating": 0.7
+    "bonusRating": 0.7,
+    "age": 21,
+    "jersey": 41,
+    "country": "India",
+    "battingStyle": "LEFT-HAND BAT",
+    "bowlingStyle": "SLOW LEFT-ARM ORTHODOX"
   },
   {
     "name": "Ramandeep Singh",
@@ -1710,7 +2746,12 @@
     "id": 207,
     "tag": "Uncapped",
     "hiddenPotential": false,
-    "bonusRating": 0.5
+    "bonusRating": 0.5,
+    "age": 27,
+    "jersey": "19",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM MEDIUM-FAST"
   },
   {
     "name": "Ayush Badoni",
@@ -1721,6 +2762,11 @@
     "id": 208,
     "tag": "Uncapped",
     "hiddenPotential": true,
-    "bonusRating": 0.9
+    "bonusRating": 0.9,
+    "age": 24,
+    "jersey": "1",
+    "country": "India",
+    "battingStyle": "RIGHT-HAND BAT",
+    "bowlingStyle": "RIGHT-ARM OFFBREAK"
   }
 ]
